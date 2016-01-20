@@ -61,8 +61,13 @@ function iety_scripts() {
     wp_enqueue_script('waypoint', get_template_directory_uri() . '/js/waypoints.js', array('jquery'),'',true);
 
     wp_enqueue_script('mixUp', get_stylesheet_directory_uri() . '/js/jQuery/jquery.mixup.min.js', array('jquery'),'',true);
+
+    /*
+     * eventMove need for twentytwenty.js
+     */
     wp_enqueue_script('eventMove', get_stylesheet_directory_uri() . '/js/after/event.move.js','','',true);
     wp_enqueue_script('twentytwenty', get_stylesheet_directory_uri() . '/js/after/twentytwenty.js',array('eventMove'),'',true);
+
     wp_enqueue_script('magnificPopup', get_stylesheet_directory_uri() . '/js/jQuery/jquery.magnific-popup.min.js', array('jquery'),'',true);
     wp_enqueue_script('pageScroll2id', get_stylesheet_directory_uri() . '/js/jQuery/jquery.malihu.PageScroll2id.js', array('jquery'),'',true);
 
@@ -73,7 +78,6 @@ function iety_scripts() {
     $allSkripts = array(
         'modernizrCustom',
         'waypoint',
-
         'mixUp',
         'eventMove',
         'twentytwenty',
