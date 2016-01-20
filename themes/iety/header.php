@@ -49,7 +49,16 @@
 
             </div>
             <div class="col-sm-12 col-md-10">
-
+                <nav class="navPage" id="navPage">
+                    <?php wp_nav_menu( array(
+                        'theme_location'  => 'headerMenuIety',
+                        'container' => false,
+                        'after' => '<span></span>',
+                        'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+                        'menu_class'  =>'itemPage',
+                    ) ); ?>
+                    <div class="coverNavPage"></div>
+                </nav>
 
             </div>
 
