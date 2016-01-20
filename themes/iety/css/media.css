@@ -1,0 +1,316 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+   .itemPage li{
+	   font-size: 18px;
+	   padding-right: 5px;
+	   margin-top: 5px;
+   }
+	.logo{
+		margin-top: 0;
+	}
+	.mainLink{
+		font-size: 5em;
+	}
+	.history p:not([class="year"]) {
+		min-height: 90px;
+
+	}
+	.priceing header h1{
+		font-size: 32px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+	.header.move .logo img{
+		width: 100%;
+	}
+	.itemPage li{
+		font-size: 17px;
+		padding: 0 5px;
+	}
+	.navPage{
+		margin: 0 0 0 35px;
+	}
+	.itemPage li span,
+	.itemPage li.active span{
+		border-width: 2px;
+	}
+	.mainLink::before,
+	.mainLink::after{
+		height: 5px;
+	}
+	.welcomeContent figure{
+		margin: 0 auto;
+	}
+	.contactUsBox{
+
+		max-width: 200px;
+		width: 33.3333%;
+		float: left;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	/*****header*********/
+
+
+	header.headerHidden {
+		pointer-events: none;
+		background: none;
+		opacity: 0;
+		transition: all 0.5s ease 0s;
+
+	}
+
+	header.headerHidden .navPage {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+
+		pointer-events: none;
+		transition: all 0.5s ease 0s;
+		opacity: 0;
+        margin: 0;
+	}
+
+	header.headerHidden .itemPage {
+
+		text-align: center;
+		margin-top: 15%;
+		list-style: none;
+	}
+
+	header.headerHidden .itemPage li {
+		display: block;
+		opacity: 0;
+		transition: all 0.3s ease 0s;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, 100%, 0);
+		margin-bottom: 10px;
+	}
+	header.headerHidden .itemPage li span{
+		border: none;
+	}
+
+	header.headerHidden .navPage .itemPage li:nth-child(1) {
+		transition-delay: 0.32s;
+	}
+
+	header.headerHidden .navPage .itemPage li:nth-child(2) {
+		transition-delay: 0.28s;
+	}
+
+	header.headerHidden .navPage .itemPage li:nth-child(3) {
+		transition-delay: 0.24s;
+	}
+	header.headerHidden .navPage .itemPage li:nth-child(4) {
+		transition-delay: 0.20s;
+	}
+
+	header.headerHidden .navPage .itemPage li:nth-child(5) {
+		transition-delay: 0.16s;
+	}
+
+	header.headerHidden .navPage .itemPage li:nth-child(6) {
+		transition-delay: 0.12s;
+	}
+	header.headerHidden .navPage .itemPage li:nth-child(7) {
+		transition-delay: 0.08s;
+	}
+
+	header.headerHidden .navPage .itemPage li:nth-child(8) {
+		transition-delay: 0.04s;
+	}
+
+
+	header.headerHidden.active .navPage .itemPage li:nth-child(1) {
+		transition-delay: 0.1s;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:nth-child(2) {
+		transition-delay: 0.2s;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:nth-child(3) {
+		transition-delay: 0.3s;
+	}
+	header.headerHidden.active .navPage .itemPage li:nth-child(4) {
+		transition-delay: 0.4s;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:nth-child(5) {
+		transition-delay: 0.5s;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:nth-child(6) {
+		transition-delay: 0.6s;
+	}
+	header.headerHidden.active .navPage .itemPage li:nth-child(7) {
+		transition-delay: 0.7s;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:nth-child(8) {
+		transition-delay: 0.8s;
+	}
+
+
+
+	header.headerHidden.active .navPage .itemPage li {
+		position: relative;
+		cursor: pointer;
+		opacity: 1;
+		transition: all 0.5s ease 0s;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	header.headerHidden.active .navPage .itemPage li span {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #0f0f0f;
+		z-index: -1;
+		opacity: 0;
+		transition: opacity 0.3s ease 0s;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:hover span {
+		opacity: 0.6;
+	}
+
+	header.headerHidden.active .navPage .itemPage li:hover a {
+		color: #CCFF33;
+	}
+
+	header.headerHidden .itemPage a {
+		color: #CCE361;
+		font-size: 28px;
+		text-transform: uppercase;
+		text-decoration: none;
+
+	}
+
+	header.headerHidden .coverNavPage {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #3c3c3c;
+		opacity: 0.8;
+		z-index: -1;
+		top: 0;
+	}
+
+	header.headerHidden.active {
+		opacity: 1;
+	}
+	header.headerHidden.active .navPage{
+		pointer-events: auto;
+		opacity: 1;
+	}
+	.itemPage li.active a,
+	.itemPage li.click a,
+	.itemPage li.active,
+	.itemPage li.click{
+		cursor: pointer;
+		pointer-events: auto;
+	}
+
+	/*↑↑↑↑↑↑↑header↑↑↑↑↑↑*/
+	.mainLink::before,
+	.mainLink::after{
+		height: 4px;
+	}
+	.mainLink{
+		font-size: 4em;
+	}
+	.welcomeContentLeft,
+	.welcomeContentRight{
+		margin-top: 0;
+	}
+	figure.ourWorkEffect{
+		margin: 10px auto;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.mainLink::before,
+	.mainLink::after{
+		height: 3px;
+	}
+	.mainLink{
+		font-size: 3em;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+	.mainLink{
+		font-size: 2em;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
