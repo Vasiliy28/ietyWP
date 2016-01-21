@@ -13,16 +13,16 @@ function iety_customize_register( $wp_customize ) {
     $wp_customize->get_section( 'header_image' )->panel = 'sydney_header_panel';
     $wp_customize->get_section( 'header_image' )->priority = '13';
     $wp_customize->get_section( 'title_tagline' )->priority = '9';
-    $wp_customize->get_section( 'title_tagline' )->title = __('Site title/tagline/logo', 'sydney');
+    $wp_customize->get_section( 'title_tagline' )->title = __('Site title/tagline/logo', 'iety');
 
     //Divider
-    class Sydney_Divider extends WP_Customize_Control {
+    class Iety_Divider extends WP_Customize_Control {
         public function render_content() {
             echo '<hr style="margin: 15px 0;border-top: 1px dashed #919191;" />';
         }
     }
     //Titles
-    class Sydney_Info extends WP_Customize_Control {
+    class Iety_Info extends WP_Customize_Control {
         public $type = 'info';
         public $label = '';
         public function render_content() {
@@ -32,7 +32,7 @@ function iety_customize_register( $wp_customize ) {
         }
     }
     //Titles
-    class Sydney_Theme_Info extends WP_Customize_Control {
+    class Iety_Theme_Info extends WP_Customize_Control {
         public $type = 'info';
         public $label = '';
         public function render_content() {
@@ -227,7 +227,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 's1', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 's1', array(
             'label' => __('First slide', 'sydney'),
             'section' => 'sydney_slider',
             'settings' => 'sydney_options[info]',
@@ -295,7 +295,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 's2', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 's2', array(
             'label' => __('Second slide', 'sydney'),
             'section' => 'sydney_slider',
             'settings' => 'sydney_options[info]',
@@ -363,7 +363,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 's3', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 's3', array(
             'label' => __('Third slide', 'sydney'),
             'section' => 'sydney_slider',
             'settings' => 'sydney_options[info]',
@@ -431,7 +431,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 's4', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 's4', array(
             'label' => __('Fourth slide', 'sydney'),
             'section' => 'sydney_slider',
             'settings' => 'sydney_options[info]',
@@ -499,7 +499,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 's5', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 's5', array(
             'label' => __('Fifth slide', 'sydney'),
             'section' => 'sydney_slider',
             'settings' => 'sydney_options[info]',
@@ -567,7 +567,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'hbutton', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'hbutton', array(
             'label' => __('Call to action button', 'sydney'),
             'section' => 'sydney_slider',
             'settings' => 'sydney_options[info]',
@@ -750,7 +750,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'layout', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'layout', array(
             'label' => __('Layout', 'sydney'),
             'section' => 'blog_options',
             'settings' => 'sydney_options[info]',
@@ -801,7 +801,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'content', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'content', array(
             'label' => __('Content/excerpt', 'sydney'),
             'section' => 'blog_options',
             'settings' => 'sydney_options[info]',
@@ -869,7 +869,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'meta', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'meta', array(
             'label' => __('Meta', 'sydney'),
             'section' => 'blog_options',
             'settings' => 'sydney_options[info]',
@@ -917,7 +917,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'images', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'images', array(
             'label' => __('Featured images', 'sydney'),
             'section' => 'blog_options',
             'settings' => 'sydney_options[info]',
@@ -1010,7 +1010,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'body_fonts', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'body_fonts', array(
             'label' => __('Body fonts', 'sydney'),
             'section' => 'sydney_fonts',
             'settings' => 'sydney_options[info]',
@@ -1058,7 +1058,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'headings_fonts', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'headings_fonts', array(
             'label' => __('Headings fonts', 'sydney'),
             'section' => 'sydney_fonts',
             'settings' => 'sydney_options[info]',
@@ -1106,7 +1106,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Info( $wp_customize, 'font_sizes', array(
+    $wp_customize->add_control( new Iety_Info( $wp_customize, 'font_sizes', array(
             'label' => __('Font sizes', 'sydney'),
             'section' => 'sydney_fonts',
             'settings' => 'sydney_options[info]',
@@ -1652,7 +1652,7 @@ function iety_customize_register( $wp_customize ) {
             'sanitize_callback' => 'esc_attr',
         )
     );
-    $wp_customize->add_control( new Sydney_Theme_Info( $wp_customize, 'documentation', array(
+    $wp_customize->add_control( new Iety_Theme_Info( $wp_customize, 'documentation', array(
             'section' => 'sydney_themeinfo',
             'settings' => 'sydney_theme_docs',
             'priority' => 10
