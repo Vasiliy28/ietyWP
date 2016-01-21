@@ -20,13 +20,19 @@ if ( ! function_exists( 'iety_setup' ) ) :
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
+
+
     function iety_setup() {
-        //custom titlw-tag for iety theme
-        remove_theme_support( 'title-tag' );
+
+
+// This theme uses wp_nav_menu() in one location.
+        register_nav_menus( array(
+            'headerMenuIety' =>( 'Header Menu Iety' )
+        ) );
 
     }
 endif; // sydney_setup
-add_action( 'after_setup_theme', 'iety_setup', 20 );
+add_action( 'after_setup_theme', 'iety_setup' );
 
 
 
@@ -86,6 +92,17 @@ function iety_scripts() {
     );
     wp_enqueue_script('mainIety', get_stylesheet_directory_uri() . '/js/mainIety.js', $allSkripts ,'',true);
 }
+
 add_action( 'wp_enqueue_scripts', 'iety_scripts' ,20);
 
 
+
+function removeParentFunction(){
+    //custom titlw-tag for iety theme
+    remove_theme_support( 'title-tag' );
+    remove_action( 'tgmpa_register', 'sydney_recommend_plugin' );
+    remove_action('admin_menu', 'sydney_add_theme_info');
+    remove_action( 'customize_register', 'sydney_customize_register' );
+
+}
+add_action('after_setup_theme','removeParentFunction');

@@ -217,37 +217,8 @@ body >section{
     transition: all 0.2s ease 0s;
 }
 
-.logo img:nth-child(2) {
-    display: none;
-}
 
-.logo span {
-    position: absolute;
-    width: 70%;
-    height: 40%;
-    top: 30%;
-    left: 15%;
-    z-index: -1;
-    -webkit-box-shadow: 0px 0px 110px -1px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 110px -1px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 110px -1px rgba(0, 0, 0, 1);
-    transition: all 0.15s ease 0s;
-}
 
-.logo:hover span {
-    transition: all 0.15s ease 0s;
-    -webkit-box-shadow: 0px 0px 115px 15px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 115px 15px rgba(0, 0, 0, 1);
-    box-shadow: 0px 0px 115px 15px rgba(0, 0, 0, 1);
-}
-
-.logo:hover img:nth-child(1) {
-    display: none;
-}
-
-.logo:hover img:nth-child(2) {
-    display: block;
-}
 /*logo*/
 
 /*move*/
