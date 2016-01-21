@@ -11,7 +11,7 @@ show_admin_bar(false);
  * Slider
  */
 require get_stylesheet_directory()  . '/inc/slider.php';
-
+require get_stylesheet_directory()  . '/inc/customizer.php';
 if ( ! function_exists( 'iety_setup' ) ) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -32,7 +32,7 @@ if ( ! function_exists( 'iety_setup' ) ) :
 
     }
 endif; // sydney_setup
-add_action( 'after_setup_theme', 'iety_setup' );
+add_action( 'after_setup_theme', 'iety_setup',20 );
 
 
 
@@ -96,13 +96,19 @@ function iety_scripts() {
 add_action( 'wp_enqueue_scripts', 'iety_scripts' ,20);
 
 
-
+/*
+ * create theme for dafault
+ */
 function removeParentFunction(){
     //custom titlw-tag for iety theme
     remove_theme_support( 'title-tag' );
+    remove_theme_support( 'custom-background' );
     remove_action( 'tgmpa_register', 'sydney_recommend_plugin' );
     remove_action('admin_menu', 'sydney_add_theme_info');
     remove_action( 'customize_register', 'sydney_customize_register' );
-
+    remove_action( 'widgets_init', 'sydney_widgets_init' );
+    remove_action( 'after_setup_theme', 'sydney_custom_header_setup' );
 }
-add_action('after_setup_theme','removeParentFunction');
+add_action('after_setup_theme','removeParentFunction',20);
+
+

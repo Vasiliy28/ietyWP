@@ -35,7 +35,7 @@ function sydney_custom_header_setup() {
 	) ) );
 }
 add_action( 'after_setup_theme', 'sydney_custom_header_setup' );
-
+remove_action( 'after_setup_theme', 'sydney_custom_header_setup' );
 if ( ! function_exists( 'sydney_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
