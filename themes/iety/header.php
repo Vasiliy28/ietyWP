@@ -27,11 +27,7 @@
         <div class="pre-bounce2"></div>
     </div>
 </div>
-<div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sydney' ); ?></a>
-
-
-
     <header class="header backgroundDark" id="header">
         <div class="container">
             <div class="col-xs-1 col-md-offset-1   hidden-xs hidden-sm">
@@ -57,29 +53,8 @@
                     ) ); ?>
                     <div class="coverNavPage"></div>
                 </nav>
-
             </div>
-
         </div>
-
-
-
-
-
-
     </header>
 
 <?php iety_slider_template() ?>
-
-
-
-
-    <div class="header-image">
-        <?php sydney_header_overlay(); ?>
-        <img class="header-inner" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
-    </div>
-
-    <div id="content" class="page-wrap">
-        <div class="container content-wrapper">
-
-            <div class="row">

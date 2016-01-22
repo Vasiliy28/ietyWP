@@ -83,7 +83,6 @@ function iety_scripts() {
      */
     $allSkripts = array(
         'modernizrCustom',
-
         'mixUp',
         'eventMove',
         'twentytwenty',
