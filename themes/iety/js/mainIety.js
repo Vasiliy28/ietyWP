@@ -329,6 +329,15 @@
                 });
             }
         })();
+        (function() {
+            if ( $( "#headerPage" ).length ) {
+                $('#headerPage').superslides({
+                    play: $('#headerPage').data('speed'),
+                    animation: 'fade',
+                    pagination: false
+                });
+            }
+        })();
         // Text slider
         (function() {
             if ( $( ".text-slider" ).length ) {

@@ -39,8 +39,6 @@
                 <?php if ( get_theme_mod('site_logo') ) : ?>
                     <figure class="logo" id="logo">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
-
-
                     </figure>
                 <?php else : ?>
                     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -71,7 +69,8 @@
 
     </header>
 
-    <?php iety_slider_template(); ?>
+<?php iety_slider_template() ?>
+
 
 
 
