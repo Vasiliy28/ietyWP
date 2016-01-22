@@ -1,10 +1,519 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a792ebbd-084a-4229-aafa-630d3453819e" name="Default" comment="">
+    <list default="true" id="757f9e96-5bd0-43d4-a5e6-707134c81e83" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/admin.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/front.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/front.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/icons/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/icons/siteorigin-panels.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/icons/siteorigin-panels.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/icons/siteorigin-panels.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/icons/siteorigin-panels.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/cell-selected.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/cell-width.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/dialog-separator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/dialog-separator@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/dropdown-pointer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/tooltip-pointer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/wpspin_light-2x.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/images/wpspin_light.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/css/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/admin-actions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/css.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/default-styles.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/live-editor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/plugin-activation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/revisions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/sidebars-emulator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/styles.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/widgets-bundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/inc/widgets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/jquery.stellar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/jquery.stellar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-history.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-live-editor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-live-editor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-styles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-styles.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels-utils.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/siteorigin-panels.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/styling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/js/styling.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-af_ZA.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-af_ZA.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-bg_BG.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-bg_BG.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-da_DK.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-da_DK.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-de_DE.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-es_ES.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-fi_FI.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-fi_FI.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-fr_FR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-hi_IN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-hi_IN.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-it_IT.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-ja_JP.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-ja_JP.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-nl_NL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-nl_NL.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-pl_PL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-pl_PL.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-pt_BR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-pt_BR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-ru_RU.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-sv_SE.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels-zh_CN.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/lang/siteorigin-panels.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/admin-settings.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/admin-settings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/admin-settings.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/admin-settings.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/admin-settings.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/images/icon-layer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/tpl/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/settings/tpl/settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/siteorigin-panels.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/tpl/admin-home-page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/tpl/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/tpl/js-templates.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/tpl/metabox-panels.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/tpl/options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/charcoal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/slate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/checks/tirquoise.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/textures/dark-dashed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/img/textures/light-dashed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/js/admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/js/admin.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/js/embedded-video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/js/embedded-video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/js/jquery.fitvids.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/js/jquery.fitvids.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/less/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/lib/color.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/lib/lessc.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/migration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets/animated-image/animated-image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets/button/button.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets/call-to-action/call-to-action.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets/list/list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets/price-box/price-box.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/siteorigin-panels/widgets/widgets/testimonial/testimonial.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/class.wpcf-import-export.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/class.wpcf-post-types.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/conditional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/editor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/evaluate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/field.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/fields.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/forms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/helper.ajax.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/path.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/post-types/messages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/relationship.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/relationship/form-child.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/relationship/form-parent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/repeater.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/usermeta_field.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/usermeta_repeater.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/validate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/validation-cakephp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/validation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/classes/wpviews.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/WPML/wpml-string-shortcode.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/Zip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/array2xml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/classes/class-toolset-admin-bar-menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/classes/class.toolset.promo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/classes/control_forms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/classes/forms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/classes/validate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/classes/validation-cakephp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/debug/debug-information.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/debug/functions_debug_information.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/expression-parser/parser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/localization/wpt-localization.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/toolset-forms/api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/toolset-forms/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/toolset-forms/dependencies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/toolset-forms/plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/toolset-forms/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/utility/utils.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/visual-editor/editor-addon-generic.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/visual-editor/editor-addon.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/visual-editor/views-editor-addon.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/wp-pointer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/wplogger.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/common/wpv-filter-date-embedded.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/frontend.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/ajax.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/ajax/admin-footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/ajax/admin-header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/classes/class.types.data.installer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/conditional-display.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/cred.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/custom-taxonomies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/custom-types.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/debug.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/examples/google_map.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields-post.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/audio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/checkbox.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/checkboxes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/colorpicker.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/embed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/map.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/numeric.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/phone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/radio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/select.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/skype.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/textarea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/textfield.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/time.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/twitter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/url.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/video.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/fields/wysiwyg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/footer-credit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/import-export.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/module-manager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/post-relationship.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/promo-tabs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/relationship/child-table-row.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/relationship/child-table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/relationship/parent-table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/repetitive-fields-ordering.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/repetitive-usermetafields-ordering.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/usermeta-add-user.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/usermeta-post.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/usermeta.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/includes/wpml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/orig/types.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-ar.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-bg_BG.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-el.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-he_IL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-ja.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-ko_KR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-nl_NL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-pl_PL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-pl_PL.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-pt_BR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-pt_PT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-uk.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-vi.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/types-zh_TW.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/locale/wp_types.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/models/relationship.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/classes/onthegosystems-styles.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthego-styles/onthe-go-styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthego-styles/onthego-admin-styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthego-styles/onthego-colors.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthego-styles/onthego-styles-helper.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthego-styles/onthego-styles-helper.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthego-styles/onthego-styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthegosystems-branding-loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthegosystems-icons/.fontcustom-manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/onthego-resources/onthegosystems-icons/fontcustom.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/plugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/basic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/colorbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/dashicons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/editor-cloned.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/editor.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/fields-post.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/post-relationship.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/repetitive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/css/usermeta.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/access-icon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/ajax-loader-big.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/ajax-loader-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/classifieds-150x150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/collapse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/delete-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/expand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-checkboxes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-numeric.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-radio-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-textarea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-textfield.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/icon-wysiwyg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/locked.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/logo-32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/magazine-final-150x150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/move.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/projectslider-150x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/radio-button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/realestate-150x150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/search_16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/search_36x34.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/showcase1-150x150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/sort.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-black_12X12.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-black_14X14.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-black_16X16.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-color_12X12.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-color_12X12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-color_14X14.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-color_16X16.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-white_12X12.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-white_14X14.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-white_16X16.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-icon-white_20X20.not-used.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/types-toolset-component.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/images/wpspin.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/conditional.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/custom-fields-form-filter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/editor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/fields-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/fields-post.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/jquery.colorbox-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/jquery.ui.datepicker.i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/jquery.ui.datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/knockout-2.2.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/numeric_fix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/post-relationship.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/repetitive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/types_editor_plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/utils-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/validation-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/validation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/resources/js/wp-views.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/onthego-resources/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/onthego-resources/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/onthego-resources/loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/onthego-resources/onthegosystems-branding-loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/onthego-resources/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/Zip.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/array2xml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/wp-pointer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/wplogger.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/toolset/toolset-common/wpv-filter-date-embedded.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/types.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/usermeta-init.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/editor-modal-window.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/child-tax-category.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/child-tax-tag.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-audio.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-checkbox.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-checkboxes.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-date.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-email.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-embed.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-file.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-image.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-numeric.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-radio.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-url.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/editor-modal-video.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/embedded/views/templates/skype-select-button.tpl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/help.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/ajax.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.custom.fields.list.table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.custom.post.types.list.table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.custom.taxonomies.list.table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.marketing.messages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.marketing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.marketing.tutorial.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.roles.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/classes/class.wpcf.user.fields.list.table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/common-functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/conditional-display.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/custom-taxonomies-form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/custom-taxonomies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/custom-types-form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/custom-types-taxonomies-list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/custom-types.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields-control.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields-form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields-list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/audio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/checkbox.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/checkboxes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/colorpicker.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/embed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/file.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/map.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/numeric.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/phone.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/radio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/select.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/skype.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/textarea.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/textfield.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/time.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/twitter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/url.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/video.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/fields/wysiwyg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/import-export.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/migration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/post-relationship.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/usermeta-control.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/usermeta-form.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/usermeta-list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/includes/usermeta.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/assets/images/access.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/assets/images/cred.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/assets/images/views.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/assets/images/wait.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/congrats-post-types/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/congrats-post-types/js/jquery.wpcfnotif.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/congrats-post-types/js/jquery.wpcfnotif.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/congrats-post-types/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/etc/types-site-kinds.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/etc/types.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/marketing/getting-started/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/includes/class-installer-theme.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/includes/installer-api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/includes/installer-upgrader-skins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/includes/installer.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/includes/translation-service-info.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/installer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-ar.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-el.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-he_IL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-ja.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-ko_KR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-nl_NL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-pl_PL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-pt_BR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-pt_PT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-uk_UA.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-vi.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/locale/installer-zh_TW.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/repositories.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/templates/downloads-list-compact.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/templates/downloads-list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/templates/products-compact.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/installer/templates/repository-listing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/css/basic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/css/suggest.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/embedded.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/images/shortcut.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/images/warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/images/xit.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/includes/admin-edit-access.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/plus/types-access/js/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/css/collapsible.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/css/fields-post.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/css/jquery-ui/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/css/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/ajax-loader-big.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/ajax-loader-small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/bw-logo-16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/collapse.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/delete-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/expand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/move.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/images/types-icon-white_20X20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/basic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/codemirror234/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/codemirror234/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/codemirror234/codemirror.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/codemirror234/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/codemirror234/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/collapsible.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/custom-types-form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/jquery-form-validation/additional-methods.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/jquery-form-validation/jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/jquery-form-validation/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/jquery.ui.datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/jquery_ui/jquery.ui.resizable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/jquery_ui/jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/resources/js/types_editor_plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/wpcf.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/types/wpml-config.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploads/settings.jar" afterPath="$PROJECT_DIR$/uploads/settings.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/iety/inc/customizer.php" afterPath="$PROJECT_DIR$/themes/iety/inc/customizer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/sydney/inc/customizer.php" afterPath="$PROJECT_DIR$/themes/sydney/inc/customizer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/wp-content.iml" afterPath="$PROJECT_DIR$/.idea/wp-content.iml" />
     </list>
     <ignored path="wp-content.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,106 +534,59 @@
     <favorites_list name="wp-content" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.79124236">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/iety/functions.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="customizer.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/themes/iety/inc/customizer.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.4169096">
-                  <caret line="1660" column="0" selection-start-line="1660" selection-start-column="0" selection-end-line="1660" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#6#60#0#PHP" expanded="true" />
-                    <element signature="e#1113#1205#0#HTML" expanded="true" />
-                    <marker date="1453405566440" expanded="true" signature="50963:51016" placeholder="..." />
-                    <marker date="1453405566440" expanded="true" signature="51172:51225" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="class-wp-customize-control.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../wp-includes/class-wp-customize-control.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="405" column="23" selection-start-line="405" selection-start-column="23" selection-end-line="405" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#6#118#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="extras.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/sydney/inc/extras.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15068494">
-                  <caret line="263" column="3" selection-start-line="263" selection-start-column="3" selection-end-line="263" selection-end-column="3" />
-                  <folding>
-                    <element signature="e#6#71#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/iety/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33082706">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/iety/stely.css" />
-        <option value="$PROJECT_DIR$/themes/iety/style.css" />
-        <option value="$PROJECT_DIR$/themes/sydney/inc/custom-header.php" />
+        <option value="$PROJECT_DIR$/themes/twentyfifteen/archive.php" />
+        <option value="$PROJECT_DIR$/themes/ietyChildTheme/style.css" />
+        <option value="$PROJECT_DIR$/themes/iety/package.json" />
+        <option value="$PROJECT_DIR$/themes/iety/node_modules/gulpfile.js" />
+        <option value="$PROJECT_DIR$/themes/iety/gulpfile.js" />
+        <option value="$PROJECT_DIR$/themes/iety/funstions.php" />
+        <option value="$PROJECT_DIR$/themes/sydney/inc/slider.php" />
+        <option value="$PROJECT_DIR$/themes/sydney/home.php" />
+        <option value="$PROJECT_DIR$/themes/sydney/index.php" />
+        <option value="$PROJECT_DIR$/themes/iety/Gulpfile.js" />
+        <option value="$PROJECT_DIR$/themes/iety/index.php" />
+        <option value="$PROJECT_DIR$/themes/iety/home.php" />
+        <option value="$PROJECT_DIR$/themes/sydney/footer.php" />
+        <option value="$PROJECT_DIR$/themes/iety/footer.php" />
+        <option value="$PROJECT_DIR$/themes/iety/inc/slider.php" />
+        <option value="$PROJECT_DIR$/../../iety.loc/index.html" />
+        <option value="$PROJECT_DIR$/themes/iety/css/fonts.css" />
         <option value="$PROJECT_DIR$/themes/sydney/functions.php" />
-        <option value="$PROJECT_DIR$/themes/sydney/inc/customizer.php" />
+        <option value="$PROJECT_DIR$/themes/iety/style.css" />
+        <option value="$PROJECT_DIR$/../wp-config.php" />
+        <option value="$PROJECT_DIR$/themes/iety/js/mainIety.js" />
         <option value="$PROJECT_DIR$/themes/iety/functions.php" />
-        <option value="$PROJECT_DIR$/themes/iety/inc/customizer.php" />
+        <option value="$PROJECT_DIR$/themes/iety/header.php" />
+        <option value="$PROJECT_DIR$/../../test.loc/wordpress/wp-config.php" />
       </list>
     </option>
   </component>
@@ -138,10 +600,34 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1861" />
-    <option name="y" value="24" />
-    <option name="width" value="1861" />
-    <option name="height" value="1056" />
+    <option name="y" value="793" />
+    <option name="width" value="1366" />
+    <option name="height" value="743" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -168,6 +654,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -263,47 +750,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iety.wp.loc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iety" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test.loc/wordpress/wp-config.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/iety" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/iety/inc" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/themes/iety" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/iety/js" />
+      <recent name="$PROJECT_DIR$/themes/iety/fonts" />
+      <recent name="$PROJECT_DIR$/themes/iety" />
+      <recent name="$PROJECT_DIR$/themes/iety/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -338,58 +805,40 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a792ebbd-084a-4229-aafa-630d3453819e" name="Default" comment="" />
-      <created>1453374867598</created>
+      <changelist id="757f9e96-5bd0-43d4-a5e6-707134c81e83" name="Default" comment="" />
+      <created>1452895041741</created>
       <option name="number" value="Default" />
-      <updated>1453374867598</updated>
+      <updated>1452895041741</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1861" y="24" width="1861" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="793" width="1366" height="743" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08597528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16348973" sideWeight="0.49061033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="top" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268839" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="59" y="370" width="1851" height="340" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="top" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29147288" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="59" y="466" width="1861" height="207" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3311828" sideWeight="0.5093897" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="top" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268839" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" x="59" y="370" width="1851" height="340" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20365395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -402,252 +851,84 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>$PROJECT_DIR$/..</wordpressPath>
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
+    <entry file="file://$PROJECT_DIR$/../../test.loc/ietti/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="70" column="9" selection-start-line="37" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test.loc/ietti/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="9" selection-start-line="37" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test.loc/ietti/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="9" selection-start-line="37" selection-start-column="0" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../test.loc/wordpress/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77512777">
+          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7870528">
+          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/iety/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33082706">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/inc/customizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <element signature="e#6#60#0#PHP" expanded="true" />
-            <element signature="e#1113#1205#0#HTML" expanded="true" />
-            <marker date="1453405566440" expanded="true" signature="50963:51016" placeholder="..." />
-            <marker date="1453405566440" expanded="true" signature="51172:51225" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-includes/class-wp-customize-control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="405" column="23" selection-start-line="405" selection-start-column="23" selection-end-line="405" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#118#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/extras.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/inc/customizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="376" column="49" selection-start-line="376" selection-start-column="49" selection-end-line="376" selection-end-column="49" />
-          <folding>
-            <element signature="e#6#60#0#PHP" expanded="true" />
-            <element signature="e#1113#1205#0#HTML" expanded="true" />
-            <marker date="1453405566440" expanded="true" signature="50963:51016" placeholder="..." />
-            <marker date="1453405566440" expanded="true" signature="51172:51225" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-includes/class-wp-customize-control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="405" column="23" selection-start-line="405" selection-start-column="23" selection-end-line="405" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#118#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/extras.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="271" selection-end-column="57" />
-          <folding>
-            <element signature="e#6#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/custom-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/styles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8695652">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/extras.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/customizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0685358">
-          <caret line="1767" column="36" selection-start-line="1767" selection-start-column="14" selection-end-line="1767" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/inc/custom-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4375">
-          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-includes/class-wp-customize-control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="405" column="23" selection-start-line="405" selection-start-column="23" selection-end-line="405" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#118#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15068494">
-          <caret line="263" column="3" selection-start-line="263" selection-start-column="3" selection-end-line="263" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#71#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/iety/inc/customizer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4169096">
-          <caret line="1660" column="0" selection-start-line="1660" selection-start-column="0" selection-end-line="1660" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#60#0#PHP" expanded="true" />
-            <element signature="e#1113#1205#0#HTML" expanded="true" />
-            <marker date="1453405566440" expanded="true" signature="50963:51016" placeholder="..." />
-            <marker date="1453405566440" expanded="true" signature="51172:51225" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
