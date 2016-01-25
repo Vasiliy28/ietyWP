@@ -45,14 +45,17 @@ function iety_scripts() {
      */
     wp_dequeue_style('sydney-headings-fonts');
     wp_dequeue_style('sydney-body-fonts');
+    wp_dequeue_style('sydney-style-inline-css');
     wp_dequeue_script('sydney-skip-link-focus-fix');
     wp_dequeue_script('sydney-masonry-init');
+
     wp_dequeue_script('sydney-main');
 
 
     /**
      *to plug stily and script for Iety theme
      */
+    wp_enqueue_style('bootstrap' , get_stylesheet_directory_uri() . '/css/bootstrap/bootstrap.min.css');
     wp_enqueue_style('robotoFonts',get_stylesheet_directory_uri() . '/css/fonts.css');
     wp_enqueue_style('animateCss' , get_stylesheet_directory_uri() . '/css/animate.min.css');
     wp_enqueue_style('twentytwenty' , get_stylesheet_directory_uri() . '/css/twentytwenty.css');
@@ -110,6 +113,8 @@ function removeParentFunction(){
     remove_action( 'customize_register', 'sydney_customize_register' );
     remove_action( 'widgets_init', 'sydney_widgets_init' );
     remove_action( 'after_setup_theme', 'sydney_custom_header_setup' );
+    remove_action( 'wp_enqueue_scripts', 'sydney_custom_styles' );
+    remove_action( 'wp_enqueue_scripts', 'sydney_enqueue_bootstrap', 9 );
 }
 add_action('after_setup_theme','removeParentFunction',20);
 

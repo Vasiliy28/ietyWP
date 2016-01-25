@@ -13,6 +13,7 @@ body {
     font-family: 'RobotoRegular', sans-serif;
 
 }
+
 body >section{
     position: relative;
     overflow: hidden;
@@ -881,6 +882,7 @@ nav.workMenu ul li.active span {
 
 .contactUsForm {
     overflow: hidden;
+    margin: 0!important;
 }
 
 .text {
@@ -1375,4 +1377,46 @@ background: #383838;
     top: 50%;
     background: url('../img/preload.GIF') no-repeat 50% 50%;
     margin: -64px 0 0 -64px;
+}
+
+/*--------------------------------------------------------------
+Go to top button
+--------------------------------------------------------------*/
+.go-top {
+    position: fixed !important;
+    background-color:#CCFF33 ;
+    right: 20px;
+    bottom: -45px;
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 9999;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.go-top:hover {
+    background-color: #fff;
+}
+.go-top.show {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+    visibility: visible;
+    bottom : 11px;
 }
