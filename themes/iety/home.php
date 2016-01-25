@@ -8,35 +8,96 @@
 get_header(); ?>
 
 
-<div id="primary" class="content-area col-md-9 <?php echo sydney_blog_layout(); ?>">
-    <main id="main" class="post-wrap" role="main">
+<?php if (have_posts()) : ?>
 
-        <?php if ( have_posts() ) : ?>
 
-            <div class="posts-layout">
-                <?php while ( have_posts() ) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-                    <?php
-                    get_template_part( 'content', get_post_format() );
-                    ?>
+        <?php
+        if (in_category('cat_welcome')) {
+            get_template_part('content', 'welcome');
+        }
+        ?>
 
-                <?php endwhile; ?>
-            </div>
+    <?php endwhile; ?> <!--post Welcome-->
 
-            <?php the_posts_navigation(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-        <?php else : ?>
+        <?php
+        if (in_category('cat_history')) {
+            get_template_part('content', 'history');
+        }
 
-            <?php get_template_part( 'content', 'none' ); ?>
+        ?>
 
-        <?php endif; ?>
+    <?php endwhile; ?> <!--post History-->
 
-    </main><!-- #main -->
-</div><!-- #primary -->
+    <?php while (have_posts()) : the_post(); ?>
+
+        <?php
+        if (in_category('cat_work')) {
+            get_template_part('content', 'work');
+        }
+
+        ?>
+
+    <?php endwhile; ?> <!--post Work -->
+
+    <?php while (have_posts()) : the_post(); ?>
+
+        <?php
+        if (in_category('cat_about')) {
+            get_template_part('content', 'about');
+        }
+
+        ?>
+
+    <?php endwhile; ?> <!--post About -->
+
+    <?php while (have_posts()) : the_post(); ?>
+
+        <?php
+        if (in_category('cat_contact')) {
+            get_template_part('content', 'contact');
+        }
+
+        ?>
+
+    <?php endwhile; ?> <!--post Contact -->
+
+    <?php while (have_posts()) : the_post(); ?>
+
+        <?php
+        if (in_category('cat_team')) {
+            get_template_part('content', 'team');
+        }
+
+        ?>
+
+    <?php endwhile; ?> <!--post Team -->
+
+    <?php while (have_posts()) : the_post(); ?>
+
+        <?php
+        if (in_category('cat_price')) {
+            get_template_part('content', 'price');
+        }
+
+        ?>
+
+    <?php endwhile; ?> <!--post Price -->
+
+<?php else : ?>
+
+    <?php get_template_part('content', 'none'); ?>
+
+<?php endif; ?>
+
 
 <?php
-if ( get_theme_mod('blog_layout','classic') == 'classic' ) :
+if (get_theme_mod('blog_layout', 'classic') == 'classic') :
     get_sidebar();
 endif;
 ?>
 <?php get_footer(); ?>
+

@@ -6,9 +6,8 @@
  * Time: 13:48
  */
 ?>
-</div>
-</div>
-</div><!-- #content -->
+
+
 
 <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
     <?php get_sidebar('footer'); ?>
@@ -23,7 +22,6 @@
         <?php printf( __( 'Theme: %2$s by %1$s.', 'sydney' ), 'aThemes', '<a href="http://athemes.com/theme/sydney" rel="designer">Sydney</a>' ); ?>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

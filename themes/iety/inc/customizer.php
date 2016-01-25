@@ -10,7 +10,7 @@ function iety_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
     $wp_customize->remove_control( 'header_textcolor' );
     $wp_customize->remove_control( 'display_header_text' );
-    $wp_customize->get_section( 'header_image' )->panel = 'sydney_header_panel';
+    $wp_customize->get_section( 'header_image' )->panel = 'iety_header_panel';
     $wp_customize->get_section( 'header_image' )->priority = '13';
     $wp_customize->get_section( 'title_tagline' )->priority = '9';
     $wp_customize->get_section( 'title_tagline' )->title = __('Site title/tagline/logo', 'iety');
@@ -100,11 +100,11 @@ function iety_customize_register( $wp_customize ) {
         )
     );
     //___Header area___//
-    $wp_customize->add_panel( 'sydney_header_panel', array(
+    $wp_customize->add_panel( 'iety_header_panel', array(
         'priority'       => 10,
         'capability'     => 'edit_theme_options',
         'theme_supports' => '',
-        'title'          => __('Header area', 'sydney'),
+        'title'          => __('Header area', 'iety'),
     ) );
     //___Header type___//
     $wp_customize->add_section(
@@ -112,7 +112,7 @@ function iety_customize_register( $wp_customize ) {
         array(
             'title'         => __('Header type', 'sydney'),
             'priority'      => 10,
-            'panel'         => 'sydney_header_panel',
+            'panel'         => 'iety_header_panel',
             'description'   => __('You can select your header type from here. After that, continue below to the next two tabs (Header Slider and Header Image) and configure them.', 'sydney'),
         )
     );
@@ -162,49 +162,33 @@ function iety_customize_register( $wp_customize ) {
     );
     //___Slider___//
     $wp_customize->add_section(
-        'sydney_slider',
+        'iety_slider',
         array(
             'title'         => __('Header Slider', 'sydney'),
             'description'   => __('You can add up to 5 images in the slider. Make sure you select where to display your slider from the Header Type section found above. You can also add a Call to action button (scroll down to find the options)', 'sydney'),
             'priority'      => 11,
-            'panel'         => 'sydney_header_panel',
+            'panel'         => 'iety_header_panel',
         )
     );
     //Speed
     $wp_customize->add_setting(
         'slider_speed',
         array(
-            'default' => __('4000','sydney'),
+            'default' => __('4000','iety'),
             'sanitize_callback' => 'absint',
         )
     );
     $wp_customize->add_control(
         'slider_speed',
         array(
-            'label' => __( 'Slider speed', 'sydney' ),
-            'section' => 'sydney_slider',
+            'label' => __( 'Slider speed', 'iety' ),
+            'section' => 'iety_slider',
             'type' => 'number',
             'description'   => __('Slider speed in miliseconds. Use 0 to disable [default: 4000]', 'sydney'),
             'priority' => 7
         )
     );
-    $wp_customize->add_setting(
-        'textslider_speed',
-        array(
-            'default' => __('4000','sydney'),
-            'sanitize_callback' => 'absint',
-        )
-    );
-    $wp_customize->add_control(
-        'textslider_speed',
-        array(
-            'label' => __( 'Text slider speed', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'number',
-            'description'   => __('Text slider speed in miliseconds [default: 4000]', 'sydney'),
-            'priority' => 8
-        )
-    );
+
     $wp_customize->add_setting(
         'textslider_slide',
         array(
@@ -216,28 +200,28 @@ function iety_customize_register( $wp_customize ) {
         array(
             'type'      => 'checkbox',
             'label'     => __('Stop the text slider?', 'sydney'),
-            'section'   => 'sydney_slider',
+            'section'   => 'iety_slider',
             'priority'  => 9,
         )
     );
     //Image 1
-    $wp_customize->add_setting('sydney_options[info]', array(
+    $wp_customize->add_setting('iety_options[info]', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
             'sanitize_callback' => 'esc_attr',
         )
     );
     $wp_customize->add_control( new Iety_Info( $wp_customize, 's1', array(
-            'label' => __('First slide', 'sydney'),
-            'section' => 'sydney_slider',
-            'settings' => 'sydney_options[info]',
+            'label' => __('First slide', 'iety'),
+            'section' => 'iety_slider',
+            'settings' => 'iety_options[info]',
             'priority' => 10
         ) )
     );
     $wp_customize->add_setting(
         'slider_image_1',
         array(
-            'default' => get_template_directory_uri() . '/images/1.jpg',
+            'default' => get_stylesheet_directory_uri() . '/img/room1.jpg',
             'sanitize_callback' => 'esc_url_raw',
         )
     );
@@ -248,64 +232,31 @@ function iety_customize_register( $wp_customize ) {
             array(
                 'label'          => __( 'Upload your first image for the slider', 'sydney' ),
                 'type'           => 'image',
-                'section'        => 'sydney_slider',
+                'section'        => 'iety_slider',
                 'settings'       => 'slider_image_1',
                 'priority'       => 11,
             )
         )
     );
-    //Title
-    $wp_customize->add_setting(
-        'slider_title_1',
-        array(
-            'default' => __('Welcome to Sydney','sydney'),
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_title_1',
-        array(
-            'label' => __( 'Title for the first slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 12
-        )
-    );
-    //Subtitle
-    $wp_customize->add_setting(
-        'slider_subtitle_1',
-        array(
-            'default' => __('Feel free to look around','sydney'),
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_subtitle_1',
-        array(
-            'label' => __( 'Subtitle for the first slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 13
-        )
-    );
+
     //Image 2
-    $wp_customize->add_setting('sydney_options[info]', array(
+    $wp_customize->add_setting('iety_options[info]', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
             'sanitize_callback' => 'esc_attr',
         )
     );
     $wp_customize->add_control( new Iety_Info( $wp_customize, 's2', array(
-            'label' => __('Second slide', 'sydney'),
-            'section' => 'sydney_slider',
-            'settings' => 'sydney_options[info]',
+            'label' => __('Second slide', 'iety'),
+            'section' => 'iety_slider',
+            'settings' => 'iety_options[info]',
             'priority' => 14
         ) )
     );
     $wp_customize->add_setting(
         'slider_image_2',
         array(
-            'default' => get_template_directory_uri() . '/images/2.jpg',
+            'default' => get_stylesheet_directory_uri() . '/img/room5.jpg',
             'sanitize_callback' => 'esc_url_raw',
         )
     );
@@ -316,48 +267,15 @@ function iety_customize_register( $wp_customize ) {
             array(
                 'label'          => __( 'Upload your second image for the slider', 'sydney' ),
                 'type'           => 'image',
-                'section'        => 'sydney_slider',
+                'section'        => 'iety_slider',
                 'settings'       => 'slider_image_2',
                 'priority'       => 15,
             )
         )
     );
-    //Title
-    $wp_customize->add_setting(
-        'slider_title_2',
-        array(
-            'default' => __('Ready to begin your journey?','sydney'),
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_title_2',
-        array(
-            'label' => __( 'Title for the second slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 16
-        )
-    );
-    //Subtitle
-    $wp_customize->add_setting(
-        'slider_subtitle_2',
-        array(
-            'default' => __('Click the button below','sydney'),
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_subtitle_2',
-        array(
-            'label' => __( 'Subtitle for the second slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 17
-        )
-    );
+
     //Image 3
-    $wp_customize->add_setting('sydney_options[info]', array(
+    $wp_customize->add_setting('iety_options[info]', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
             'sanitize_callback' => 'esc_attr',
@@ -365,8 +283,8 @@ function iety_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new Iety_Info( $wp_customize, 's3', array(
             'label' => __('Third slide', 'sydney'),
-            'section' => 'sydney_slider',
-            'settings' => 'sydney_options[info]',
+            'section' => 'iety_slider',
+            'settings' => 'iety_options[info]',
             'priority' => 18
         ) )
     );
@@ -384,48 +302,15 @@ function iety_customize_register( $wp_customize ) {
             array(
                 'label'          => __( 'Upload your third image for the slider', 'sydney' ),
                 'type'           => 'image',
-                'section'        => 'sydney_slider',
+                'section'        => 'iety_slider',
                 'settings'       => 'slider_image_3',
                 'priority'       => 19,
             )
         )
     );
-    //Title
-    $wp_customize->add_setting(
-        'slider_title_3',
-        array(
-            'default' => '',
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_title_3',
-        array(
-            'label' => __( 'Title for the third slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 20
-        )
-    );
-    //Subtitle
-    $wp_customize->add_setting(
-        'slider_subtitle_3',
-        array(
-            'default' => '',
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_subtitle_3',
-        array(
-            'label' => __( 'Subtitle for the third slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 21
-        )
-    );
+
     //Image 4
-    $wp_customize->add_setting('sydney_options[info]', array(
+    $wp_customize->add_setting('iety_options[info]', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
             'sanitize_callback' => 'esc_attr',
@@ -433,8 +318,8 @@ function iety_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new Iety_Info( $wp_customize, 's4', array(
             'label' => __('Fourth slide', 'sydney'),
-            'section' => 'sydney_slider',
-            'settings' => 'sydney_options[info]',
+            'section' => 'iety_slider',
+            'settings' => 'iety_options[info]',
             'priority' => 22
         ) )
     );
@@ -452,48 +337,15 @@ function iety_customize_register( $wp_customize ) {
             array(
                 'label'          => __( 'Upload your fourth image for the slider', 'sydney' ),
                 'type'           => 'image',
-                'section'        => 'sydney_slider',
+                'section'        => 'iety_slider',
                 'settings'       => 'slider_image_4',
                 'priority'       => 23,
             )
         )
     );
-    //Title
-    $wp_customize->add_setting(
-        'slider_title_4',
-        array(
-            'default' => '',
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_title_4',
-        array(
-            'label' => __( 'Title for the fourth slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 24
-        )
-    );
-    //Subtitle
-    $wp_customize->add_setting(
-        'slider_subtitle_4',
-        array(
-            'default' => '',
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_subtitle_4',
-        array(
-            'label' => __( 'Subtitle for the fourth slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 25
-        )
-    );
+
     //Image 5
-    $wp_customize->add_setting('sydney_options[info]', array(
+    $wp_customize->add_setting('iety_options[info]', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
             'sanitize_callback' => 'esc_attr',
@@ -501,8 +353,8 @@ function iety_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new Iety_Info( $wp_customize, 's5', array(
             'label' => __('Fifth slide', 'sydney'),
-            'section' => 'sydney_slider',
-            'settings' => 'sydney_options[info]',
+            'section' => 'iety_slider',
+            'settings' => 'iety_options[info]',
             'priority' => 26
         ) )
     );
@@ -520,48 +372,15 @@ function iety_customize_register( $wp_customize ) {
             array(
                 'label'          => __( 'Upload your fifth image for the slider', 'sydney' ),
                 'type'           => 'image',
-                'section'        => 'sydney_slider',
+                'section'        => 'iety_slider',
                 'settings'       => 'slider_image_5',
                 'priority'       => 27,
             )
         )
     );
-    //Title
-    $wp_customize->add_setting(
-        'slider_title_5',
-        array(
-            'default' => '',
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_title_5',
-        array(
-            'label' => __( 'Title for the fifth slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 28
-        )
-    );
-    //Subtitle
-    $wp_customize->add_setting(
-        'slider_subtitle_5',
-        array(
-            'default' => '',
-            'sanitize_callback' => 'sydney_sanitize_text',
-        )
-    );
-    $wp_customize->add_control(
-        'slider_subtitle_5',
-        array(
-            'label' => __( 'Subtitle for the fifth slide', 'sydney' ),
-            'section' => 'sydney_slider',
-            'type' => 'text',
-            'priority' => 29
-        )
-    );
+
     //Header button
-    $wp_customize->add_setting('sydney_options[info]', array(
+    $wp_customize->add_setting('iety_options[info]', array(
             'type'              => 'info_control',
             'capability'        => 'edit_theme_options',
             'sanitize_callback' => 'esc_attr',
@@ -569,8 +388,8 @@ function iety_customize_register( $wp_customize ) {
     );
     $wp_customize->add_control( new Iety_Info( $wp_customize, 'hbutton', array(
             'label' => __('Call to action button', 'sydney'),
-            'section' => 'sydney_slider',
-            'settings' => 'sydney_options[info]',
+            'section' => 'iety_slider',
+            'settings' => 'iety_options[info]',
             'priority' => 30
         ) )
     );
@@ -585,7 +404,7 @@ function iety_customize_register( $wp_customize ) {
         'slider_button_url',
         array(
             'label' => __( 'URL for your call to action button', 'sydney' ),
-            'section' => 'sydney_slider',
+            'section' => 'iety_slider',
             'type' => 'text',
             'priority' => 31
         )
@@ -601,7 +420,7 @@ function iety_customize_register( $wp_customize ) {
         'slider_button_text',
         array(
             'label' => __( 'Text for your call to action button', 'sydney' ),
-            'section' => 'sydney_slider',
+            'section' => 'iety_slider',
             'type' => 'text',
             'priority' => 32
         )
@@ -1661,3 +1480,4 @@ function iety_customize_register( $wp_customize ) {
 
 }
 add_action( 'customize_register', 'iety_customize_register' );
+

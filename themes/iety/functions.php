@@ -10,8 +10,7 @@ show_admin_bar(false);
 /**
  * Slider
  */
-require get_stylesheet_directory()  . '/inc/slider.php';
-require get_stylesheet_directory()  . '/inc/customizer.php';
+
 if ( ! function_exists( 'iety_setup' ) ) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -50,6 +49,7 @@ function iety_scripts() {
     wp_dequeue_script('sydney-masonry-init');
     wp_dequeue_script('sydney-main');
 
+
     /**
      *to plug stily and script for Iety theme
      */
@@ -64,7 +64,7 @@ function iety_scripts() {
     wp_style_add_data( 'html5', 'conditional', 'IE' );
 
     wp_enqueue_script('modernizrCustom', get_stylesheet_directory_uri() . '/js/modernizr.custom.js', array('jquery'));
-    wp_enqueue_script('waypoint', get_template_directory_uri() . '/js/waypoints.js', array('jquery'),'',true);
+
 
     wp_enqueue_script('mixUp', get_stylesheet_directory_uri() . '/js/jQuery/jquery.mixup.min.js', array('jquery'),'',true);
 
@@ -83,7 +83,6 @@ function iety_scripts() {
      */
     $allSkripts = array(
         'modernizrCustom',
-        'waypoint',
         'mixUp',
         'eventMove',
         'twentytwenty',
@@ -101,6 +100,9 @@ add_action( 'wp_enqueue_scripts', 'iety_scripts' ,20);
  */
 function removeParentFunction(){
     //custom titlw-tag for iety theme
+    remove_action('wp_head','rsd_link');
+    remove_action('wp_head','wlwmanifest_link');
+    remove_action('wp_head','wp_generator');
     remove_theme_support( 'title-tag' );
     remove_theme_support( 'custom-background' );
     remove_action( 'tgmpa_register', 'sydney_recommend_plugin' );
@@ -111,4 +113,8 @@ function removeParentFunction(){
 }
 add_action('after_setup_theme','removeParentFunction',20);
 
+
+require get_stylesheet_directory()  . '/inc/slider.php';
+require get_stylesheet_directory()  . '/inc/customizer.php';
+//require get_stylesheet_directory()  . '/inc/theme-options.php';
 

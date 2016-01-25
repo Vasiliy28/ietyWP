@@ -27,11 +27,7 @@
         <div class="pre-bounce2"></div>
     </div>
 </div>
-<div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sydney' ); ?></a>
-
-
-
     <header class="header backgroundDark" id="header">
         <div class="container">
             <div class="col-xs-1 col-md-offset-1   hidden-xs hidden-sm">
@@ -39,8 +35,6 @@
                 <?php if ( get_theme_mod('site_logo') ) : ?>
                     <figure class="logo" id="logo">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" /></a>
-
-
                     </figure>
                 <?php else : ?>
                     <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -59,28 +53,8 @@
                     ) ); ?>
                     <div class="coverNavPage"></div>
                 </nav>
-
             </div>
-
         </div>
-
-
-
-
-
-
     </header>
 
-    <?php iety_slider_template(); ?>
-
-
-
-    <div class="header-image">
-        <?php sydney_header_overlay(); ?>
-        <img class="header-inner" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
-    </div>
-
-    <div id="content" class="page-wrap">
-        <div class="container content-wrapper">
-
-            <div class="row">
+<?php iety_slider_template() ?>
