@@ -6,53 +6,55 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperWelcome backgroundDark " id="welcome">
+<section class="wrapperWelcome <?php echo (the_field('background_post'));  ?>" >
+
     <div class="container">
         <div class="welcome">
             <header class="headerSection ">
-                <h1>Welcome</h1>
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h1><?php the_title() ?></h1>
+                <?php the_content() ?>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
             </header>
             <article class="welcomeContent clearfix">
-                <div class="col-xs-12 hidden-md col-lg-push-4 col-lg-4">
+                <div class="col-xs-12 hidden-md col-md-push-4 col-md-4">
                     <figure class="clearfix welcomeLog" id="welcomeLog">
-                        <img src="img/logoHover.png" alt="" class="clearfix">
+                        <?php
+
+                        $image = get_field('logo_image');
+
+                        if( !empty($image) ): ?>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="clearfix" />
+                        <?php endif; ?>
+
                     </figure>
                 </div>
-
-                <div class="col-xs-12 col-sm-6 col-lg-pull-4 col-lg-4 welcomeContentLeft">
-                    <h2>about</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, ullam.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur debitis ex
-                        exercitationem fugit illo optio qui, repellat similique ullam.</p>
-                    <p>A alias aliquam cupiditate dolores iusto, minima nulla numquam reiciendis sequi. Distinctio fugit
-                        iste perspiciatis repellendus, soluta sunt tempore temporibus.</p>
+                <div class="col-xs-12 col-sm-6 col-md-pull-4 col-md-4 clearfix ">
+                    <div class="welcomeContentLeft">
+                        <?php the_field('welcome_content_left'); ?>
+                    </div>
                 </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 ">
+                    <div class="welcomeContentRight">
+                        <?php the_field('welcome_content_right'); ?>
+                        <?php
+                        /*
+                        *  Loop through a Repeater field
+                        */
 
-                <div class="col-xs-12 col-sm-6 col-lg-4 welcomeContentRight">
-                    <h2>info</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <p>Aperiam deserunt expedita pariatur perspiciatis placeat sint.</p>
-                    <p>Facere hic in magnam non, numquam sapiente.</p>
-                    <ul>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Accusantium, mollitia nemo.</li>
-                        <li>Illum, porro voluptates?</li>
-                        <li>Nostrum repellendus, sunt.</li>
-                        <li>Exercitationem, recusandae totam.</li>
-                        <li>Eos, molestias saepe.</li>
-                        <li>Consectetur, harum, soluta!</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                    <ul class="iconGroup">
-                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
+                        if( get_field('icons') )
+                        { ?>
+                        <ul class="iconGroup">
+                            <?php
+                            while( has_sub_field('icons') )
+                            {
+                                echo  '<li><a href="'.get_sub_field('icon_link').'">'.get_sub_field('icon_skin').'</a></li>';
+                            }
+                            ?>
+                        </ul>
+                        <?php } ?>
+                    </div>
                 </div>
             </article>
         </div>

@@ -550,6 +550,7 @@ body >section{
 .welcomeContentRight,
 .welcomeLog{
     opacity: 0;
+    min-height: 100px;
 }
 
 

@@ -27,7 +27,7 @@
         <div class="pre-bounce2"></div>
     </div>
 </div>
-    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sydney' ); ?></a>
+
     <header class="header backgroundDark" id="header">
         <div class="container">
             <div class="col-xs-1 col-md-offset-1   hidden-xs hidden-sm">
@@ -50,6 +50,7 @@
                         'after' => '<span></span>',
                         'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                         'menu_class'  =>'itemPage',
+
                     ) ); ?>
                     <div class="coverNavPage"></div>
                 </nav>
