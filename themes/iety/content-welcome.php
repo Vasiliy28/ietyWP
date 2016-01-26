@@ -7,7 +7,6 @@
  */
 ?>
 <section class="wrapperWelcome <?php echo (the_field('background_post'));  ?>" >
-
     <div class="container">
         <div class="welcome">
             <header class="headerSection ">
@@ -38,21 +37,12 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 ">
                     <div class="welcomeContentRight">
                         <?php the_field('welcome_content_right'); ?>
-                        <?php
-                        /*
-                        *  Loop through a Repeater field
-                        */
-
-                        if( get_field('icons') )
-                        { ?>
-                        <ul class="iconGroup">
-                            <?php
-                            while( has_sub_field('icons') )
-                            {
+                        <?php if( get_field('icons') ){ ?>
+                            <ul class="iconGroup">
+                            <?php while( has_sub_field('icons') ) {
                                 echo  '<li><a href="'.get_sub_field('icon_link').'">'.get_sub_field('icon_skin').'</a></li>';
-                            }
-                            ?>
-                        </ul>
+                            } ?>
+                            </ul>
                         <?php } ?>
                     </div>
                 </div>

@@ -6,7 +6,8 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperOurHistory backgroundLight twentytwenty-container " id="ourHistory">
+
+<section class="wrapperOurHistory <?php echo (the_field('background_post'));  ?> twentytwenty-container " id="ourHistory">
 
     <div class="twentytwentyLeft" >
 
@@ -15,10 +16,10 @@
 
     </div>
     <div class="container ">
-
         <div class="ourHistory ">
             <header class="headerSectionLight">
-                <h1>How it all began...</h1>
+                <h1><?php the_field('header'); ?></h1>
+
             </header>
             <article class="ourHistoryContent clearfix ">
 
