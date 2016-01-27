@@ -29,6 +29,47 @@ if ( ! function_exists( 'iety_setup' ) ) :
             'headerMenuIety' =>( 'Header Menu Iety' )
         ) );
 
+        class description_walker extends Walker_Nav_Menu
+        {
+            function start_el(&$output, $item, $depth, $args)
+            {
+                global $wp_query;
+                $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+                $class_names = $value = '';
+
+                $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+
+                $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
+                $class_names = ' class="'. esc_attr( $class_names ) . '"';
+
+                $output .= $indent . '<li id="menu-item-'. $item->ID . '"' . $value . $class_names .'>';
+
+                $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+                $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+                $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+                $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+                $prepend = '<strong>';
+                $append = '</strong>';
+                $description  = ! empty( $item->description ) ? '<span>'.esc_attr( $item->description ).'</span>' : '';
+
+                if($depth != 0)
+                {
+                    $description = $append = $prepend = "";
+                }
+
+                $item_output = $args->before;
+                $item_output .= '<a'. $attributes .'>';
+                $item_output .= $args->link_before .$prepend.apply_filters( 'the_title', $item->title ).$append;
+                $item_output .= $description.$args->link_after;
+                $item_output .= '</a>';
+                $item_output .= $args->after;
+
+                $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+            }
+        }
+
     }
 endif; // sydney_setup
 add_action( 'after_setup_theme', 'iety_setup',20 );
@@ -45,14 +86,17 @@ function iety_scripts() {
      */
     wp_dequeue_style('sydney-headings-fonts');
     wp_dequeue_style('sydney-body-fonts');
+    wp_dequeue_style('sydney-style-inline-css');
     wp_dequeue_script('sydney-skip-link-focus-fix');
     wp_dequeue_script('sydney-masonry-init');
+
     wp_dequeue_script('sydney-main');
 
 
     /**
      *to plug stily and script for Iety theme
      */
+    wp_enqueue_style('bootstrap' , get_stylesheet_directory_uri() . '/css/bootstrap/bootstrap.min.css');
     wp_enqueue_style('robotoFonts',get_stylesheet_directory_uri() . '/css/fonts.css');
     wp_enqueue_style('animateCss' , get_stylesheet_directory_uri() . '/css/animate.min.css');
     wp_enqueue_style('twentytwenty' , get_stylesheet_directory_uri() . '/css/twentytwenty.css');
@@ -100,6 +144,9 @@ add_action( 'wp_enqueue_scripts', 'iety_scripts' ,20);
  */
 function removeParentFunction(){
     //custom titlw-tag for iety theme
+    remove_action('wp_head','rsd_link');
+    remove_action('wp_head','wlwmanifest_link');
+    remove_action('wp_head','wp_generator');
     remove_theme_support( 'title-tag' );
     remove_theme_support( 'custom-background' );
     remove_action( 'tgmpa_register', 'sydney_recommend_plugin' );
@@ -107,10 +154,13 @@ function removeParentFunction(){
     remove_action( 'customize_register', 'sydney_customize_register' );
     remove_action( 'widgets_init', 'sydney_widgets_init' );
     remove_action( 'after_setup_theme', 'sydney_custom_header_setup' );
+    remove_action( 'wp_enqueue_scripts', 'sydney_custom_styles' );
+    remove_action( 'wp_enqueue_scripts', 'sydney_enqueue_bootstrap', 9 );
 }
 add_action('after_setup_theme','removeParentFunction',20);
 
 
 require get_stylesheet_directory()  . '/inc/slider.php';
 require get_stylesheet_directory()  . '/inc/customizer.php';
+//require get_stylesheet_directory()  . '/inc/theme-options.php';
 
