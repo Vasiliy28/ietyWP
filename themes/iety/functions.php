@@ -164,3 +164,8 @@ require get_stylesheet_directory()  . '/inc/slider.php';
 require get_stylesheet_directory()  . '/inc/customizer.php';
 //require get_stylesheet_directory()  . '/inc/theme-options.php';
 
+
+
+
+
+

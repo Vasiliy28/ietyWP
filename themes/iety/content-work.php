@@ -6,16 +6,15 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperOurWork backgroundDark" id="ourWork">
+<section class="wrapperOurWork <?php echo (the_field('background_post'));  ?>" id="ourWork">
     <div class="container-fluid">
         <section class="ourWork">
             <header class="headerSection">
-                <h1>Our Work</h1>
-                <h3>work's at the last time </h3>
+                <h1><?php the_title() ?></h1>
+                <?php the_content() ?>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
-
             </header>
 
             <nav class="workMenu">
@@ -26,10 +25,21 @@
                     <li class="filter" data-filter=".category3">category 3 <span></span></li>
                 </ul>
             </nav>
+            <?php
+            $categories=  get_categories(array(
+                'child_of' => 10,
+                'hide_empty'   => 0));
+            foreach ($categories as $category) {
+                $option = '<option >';
+                $option .= $category->cat_name;
+
+                $option .= '</option>';
+                echo $option;
+            }
+            ?>
 
             <article id="allWorks" class="allWorks clearfix">
-
-                <div class="mix col-xs-12 col-sm-6 col-md-4 col-lg-3 clearfix category2 category1 ">
+                <div class="mix col-xs-12 col-sm-6 col-md-4 col-lg-3 вас category2 category1 ">
                     <figure class="ourWorkEffect">
                         <img src="img/portfolio/1.jpg"  alt="img06"/>
                         <span></span>
