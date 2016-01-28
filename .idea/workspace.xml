@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a792ebbd-084a-4229-aafa-630d3453819e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/iety/content-history.php" afterPath="$PROJECT_DIR$/themes/iety/content-history.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/iety/content-welcome.php" afterPath="$PROJECT_DIR$/themes/iety/content-welcome.php" />
     </list>
     <ignored path="wp-content.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +74,7 @@
               <file leaf-file-name="content-welcome.php" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/themes/iety/content-welcome.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="-18.206896">
+                    <state vertical-scroll-proportion="0.0">
                       <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
                       <folding>
                         <element signature="e#6#84#0#PHP" expanded="true" />
@@ -88,16 +86,9 @@
               <file leaf-file-name="content-history.php" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/themes/iety/content-history.php">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.6327769">
-                      <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-                      <folding>
-                        <element signature="n#header#0;n#div#0;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-                        <element signature="n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-                        <element signature="n#div#0;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-                        <element signature="n#div#1;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-                        <element signature="n#div#2;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-                        <element signature="n#div#3;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-                      </folding>
+                    <state vertical-scroll-proportion="1.4536817">
+                      <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -109,7 +100,7 @@
               <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.9332322">
+                    <state vertical-scroll-proportion="1.4536817">
                       <caret line="552" column="3" selection-start-line="552" selection-start-column="3" selection-end-line="552" selection-end-column="22" />
                       <folding />
                     </state>
@@ -125,7 +116,7 @@
           <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5645933">
+                <state vertical-scroll-proportion="1.3583333">
                   <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="66" />
                   <folding>
                     <element signature="e#6#71#0#PHP" expanded="true" />
@@ -184,10 +175,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="1104" />
-    <option name="width" value="1861" />
-    <option name="height" value="1056" />
+    <option name="x" value="291" />
+    <option name="y" value="-896" />
+    <option name="width" value="1387" />
+    <option name="height" value="734" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -214,6 +205,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -462,8 +455,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -523,10 +514,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="1104" width="1861" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="291" y="-896" width="1387" height="734" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07737775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.103821196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299389" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -897,7 +888,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/iety/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9332322">
+        <state vertical-scroll-proportion="1.4536817">
           <caret line="552" column="3" selection-start-line="552" selection-start-column="3" selection-end-line="552" selection-end-column="22" />
           <folding />
         </state>
@@ -920,7 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/sydney/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5645933">
+        <state vertical-scroll-proportion="1.3583333">
           <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="66" />
           <folding>
             <element signature="e#6#71#0#PHP" expanded="true" />
@@ -950,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.400607">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +961,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/iety/content-welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.206896">
+        <state vertical-scroll-proportion="0.0">
           <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding>
             <element signature="e#6#84#0#PHP" expanded="true" />
@@ -981,16 +971,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/iety/content-history.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6327769">
-          <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#article#0;n#div#0;n#div#2;n#section#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="1.4536817">
+          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
