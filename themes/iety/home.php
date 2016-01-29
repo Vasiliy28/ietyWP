@@ -7,21 +7,19 @@
  */
 get_header(); ?>
 
-
 <?php if (have_posts()) : ?>
-
     <?php while (have_posts()) : the_post(); ?>
-
         <?php
         if (in_category('cat_welcome')) {
             get_template_part('content', 'welcome');
         }
 
-        if (in_category('cat_history')) {
+      if (in_category('cat_history')) {
             get_template_part('content', 'history');
+
         }
 
-        if (in_category('cat_work')) {
+      if (in_category('cat_work')) {
             get_template_part('content', 'work');
         }
 

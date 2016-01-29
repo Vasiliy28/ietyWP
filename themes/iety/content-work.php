@@ -16,7 +16,6 @@
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
             </header>
-
             <nav class="workMenu">
                 <ul>
                     <li class="filter" data-filter="all">all <span></span></li>
@@ -25,19 +24,7 @@
                     <li class="filter" data-filter=".category3">category 3 <span></span></li>
                 </ul>
             </nav>
-            <?php
-            $categories=  get_categories(array(
-                'child_of' => 10,
-                'hide_empty'   => 0));
-            foreach ($categories as $category) {
-                $option = '<option >';
-                $option .= $category->cat_name;
-
-                $option .= '</option>';
-                echo $option;
-            }
-            ?>
-
+           
             <article id="allWorks" class="allWorks clearfix">
                 <div class="mix col-xs-12 col-sm-6 col-md-4 col-lg-3 вас category2 category1 ">
                     <figure class="ourWorkEffect">
