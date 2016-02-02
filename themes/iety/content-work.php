@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 <?php
 /**
  * Created by PhpStorm.
@@ -121,4 +120,4 @@
     </div>
 
 </section>
->>>>>>> a6ce9d33386ee9bd6fd4f2374301a163c4988e52
+
