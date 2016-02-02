@@ -11,7 +11,7 @@
         <div class="welcome">
             <header class="headerSection ">
                 <h1><?php the_title() ?></h1>
-                <?php the_content() ?>
+                <h3><?php the_field('header_post');?></h3>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
@@ -37,13 +37,13 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 ">
                     <div class="welcomeContentRight">
                         <?php the_field('welcome_content_right'); ?>
-                        <?php if( get_field('icons') ){ ?>
+                        <?php if( have_rows('icons') ) :?>
                             <ul class="iconGroup">
-                            <?php while( has_sub_field('icons') ) {
+                            <?php while( have_rows('icons') ) : the_row();
                                 echo  '<li><a href="'.get_sub_field('icon_link').'">'.get_sub_field('icon_skin').'</a></li>';
-                            } ?>
+                            endwhile;?>
                             </ul>
-                        <?php } ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </article>
