@@ -12,7 +12,7 @@
         <section class="ourWork">
             <header class="headerSection">
                 <h1><?php the_title() ?></h1>
-                <?php the_content() ?>
+                <h3><?php the_field('header_post');?></h3>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
@@ -20,12 +20,22 @@
             <nav class="workMenu">
                 <ul>
                     <li class="filter" data-filter="all">all <span></span></li>
-                    <li class="filter" data-filter=".category1 ">category 1 <span></span></li>
-                    <li class="filter" data-filter=".category2">category 2 <span></span></li>
-                    <li class="filter" data-filter=".category3">category 3 <span></span></li>
+
+                    <?php
+                    $categories=  get_categories(array(
+                        'taxonomy' =>'type_of_work',
+                        'hide_empty' =>false
+                    ));
+                    foreach ($categories as $category) {
+                        $option = '<li class="filter" data-filter=".'.$category->slug.'">';
+                        $option .= $category->cat_name;
+                        $option .= '<span></span></li>';
+                        echo $option;
+                    }
+                    ?>
                 </ul>
             </nav>
-           
+
             <article id="allWorks" class="allWorks clearfix">
                 <div class="mix col-xs-12 col-sm-6 col-md-4 col-lg-3 вас category2 category1 ">
                     <figure class="ourWorkEffect">
