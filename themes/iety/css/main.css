@@ -733,7 +733,6 @@ nav.workMenu ul {
 nav.workMenu ul li {
     position: relative;
     display: inline-block;
-
     cursor: pointer;
     font-size: 22px;
     line-height: 22px;
@@ -742,6 +741,7 @@ nav.workMenu ul li {
     z-index: 1;
     padding: 5px 15px 10px;
     text-align: center;
+    text-transform: lowercase;
 }
 
 nav.workMenu ul li span {
@@ -813,18 +813,19 @@ nav.workMenu ul li.active span {
 .aboutUsContentCenter {
     overflow: hidden;
 }
+.aboutUsContentCenter ul{
+    color: #686868;
+    font-style: italic;
+    list-style: none;
+    padding-left: 20px;
+}
 
-.aboutUs p,
-.listAbout{
+.aboutUs p{
     color: #686868;
     font-style: italic;
 }
 
-.listAbout{
-    list-style: none;
-    padding-left: 20px;
-}
-.listAbout li:before{
+.aboutUsContentCenter ul li:before{
     font-size: 24px;
     content: '\27A4';
     margin-right: 5px;

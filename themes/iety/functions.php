@@ -178,6 +178,7 @@ require get_stylesheet_directory()  . '/inc/customizer.php';
 require get_stylesheet_directory()  . '/post_types/work.php';
 require get_stylesheet_directory()  . '/post_types/welcome.php';
 require get_stylesheet_directory()  . '/post_types/history.php';
+require get_stylesheet_directory()  . '/post_types/about.php';
 //require get_stylesheet_directory()  . '/inc/theme-options.php';
 
 
