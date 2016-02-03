@@ -95,10 +95,13 @@ if(! function_exists('work_taxonomy')):
             'menu_name'                  => $plural,
         );
         $args = array(
+
             'hierarchical'          => true,
             'labels'                => $labels,
             'show_ui'               => true,
             'show_admin_column'     => true,
+            'show_in_quick_edit'    => false,
+
             'update_count_callback' => '_update_post_term_count',
             'query_var'             => true,
             'rewrite'               => array( 'slug' => $slug ),
