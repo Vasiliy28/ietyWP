@@ -13,7 +13,8 @@ $arg = array(
         'history',
         'work',
         'about',
-        'team'),
+        'team',
+        'price'),
     'orderby' => array(
         'menu_order' => 'ASC',
         ),
@@ -41,53 +42,13 @@ $query = new WP_Query($arg);
         if ($post->post_type == 'team') {
             get_template_part('content', 'team');
         }
-
-
-
-
-
-        /*the_content();
-
-<?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
-        <?php
-
-        if (in_category('cat_welcome')) {
-            get_template_part('content', 'welcome');
-        }
-
-      if (in_category('cat_history')) {
-            get_template_part('content', 'history');
-
-        }
-
-      if (in_category('cat_work')) {
-            get_template_part('content', 'work');
-        }
-
-        if (in_category('cat_about')) {
-            get_template_part('content', 'about');
-        }
-
-        if (in_category('cat_contact')) {
-            get_template_part('content', 'contact');
-        }
-
-        if (in_category('cat_team')) {
-            get_template_part('content', 'team');
-        }
-
-        if (in_category('cat_price')) {
+        if ($post->post_type == 'price') {
             get_template_part('content', 'price');
-        }*/
-
+        }
 
         ?>
 
-    <?php endwhile; ?> <!--post Welcome-->
-
-
-
+    <?php endwhile; ?>
 <?php else : ?>
 
     <?php get_template_part('content', 'none'); ?>

@@ -52,7 +52,7 @@
                 <?php
             endif;
             ?>
-</article>
+            </article>
 
         </div>
 

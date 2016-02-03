@@ -50,6 +50,8 @@
                         'after' => '<span></span>',
                         'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
                         'menu_class'  =>'itemPage',
+                            'walker' => new True_Walker_Nav_Menu()
+
 
                     ) ); ?>
                     <div class="coverNavPage"></div>
