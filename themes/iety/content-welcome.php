@@ -11,7 +11,7 @@
         <div class="welcome">
             <header class="headerSection ">
                 <h1><?php the_title() ?></h1>
-                <?php the_content() ?>
+                <h3><?php the_field('header_post');?></h3>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>
                 <div><span class="sep"></span></div>

@@ -6,10 +6,45 @@
  * Time: 13:47
  */
 get_header(); ?>
+<?php
+$arg = array(
+    'post_type' => array(
+        'welcome',
+        'history',
+        'work'),
+    'orderby' => array(
+        'menu_order' => 'ASC',
+        ),
+);
+$query = new WP_Query($arg);
+?>
+<?php if ($query->have_posts()) :  ?>
+
+
+    <?php while ($query->have_posts()) : $query->the_post(); ?>
+
+        <?php
+        if ($post->post_type == 'history') {
+            get_template_part('content', 'history');
+        }
+        if ($post->post_type == 'welcome') {
+            get_template_part('content', 'welcome');
+        }
+        if ($post->post_type == 'work') {
+            get_template_part('content', 'work');
+        }
+
+
+
+
+
+
+        /*the_content();
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
         <?php
+
         if (in_category('cat_welcome')) {
             get_template_part('content', 'welcome');
         }
@@ -37,7 +72,7 @@ get_header(); ?>
 
         if (in_category('cat_price')) {
             get_template_part('content', 'price');
-        }
+        }*/
 
 
         ?>

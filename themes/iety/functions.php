@@ -79,7 +79,6 @@ add_action( 'after_setup_theme', 'iety_setup',20 );
 /**
  * Enqueue scripts and styles.
  */
-
 function iety_scripts() {
     /**
      * remove Sydney Theme style and script
@@ -135,9 +134,20 @@ function iety_scripts() {
     );
     wp_enqueue_script('mainIety', get_stylesheet_directory_uri() . '/js/mainIety.js', $allSkripts ,'',true);
 }
-
 add_action( 'wp_enqueue_scripts', 'iety_scripts' ,20);
 
+
+/*
+ * Show posts of 'post', 'page' and 'movie' post types on home page
+ */
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+function add_my_post_types_to_query( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'page', 'work','history','welcome' ));
+
+    return $query;
+}
 
 /*
  * create theme for dafault
@@ -159,12 +169,16 @@ function removeParentFunction(){
 }
 add_action('after_setup_theme','removeParentFunction',20);
 
-
 require get_stylesheet_directory()  . '/inc/slider.php';
 require get_stylesheet_directory()  . '/inc/customizer.php';
+
+/*
+ * add custom post type
+ */
+require get_stylesheet_directory()  . '/post_types/work.php';
+require get_stylesheet_directory()  . '/post_types/welcome.php';
+require get_stylesheet_directory()  . '/post_types/history.php';
 //require get_stylesheet_directory()  . '/inc/theme-options.php';
-
-
 
 
 

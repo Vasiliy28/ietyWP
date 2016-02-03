@@ -18,8 +18,7 @@
     <div class="container ">
         <div class="ourHistory ">
             <header class="headerSectionLight">
-                <h1><?php the_field('header'); ?></h1>
-
+                <h1><?php the_field('header_post');?></h1>
             </header>
             <article class="ourHistoryContent clearfix ">
                 <?php if( have_rows('history_profile') ): ?>
