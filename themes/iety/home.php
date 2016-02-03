@@ -12,7 +12,8 @@ $arg = array(
         'welcome',
         'history',
         'work',
-        'about'),
+        'about',
+        'team'),
     'orderby' => array(
         'menu_order' => 'ASC',
         ),
@@ -37,7 +38,9 @@ $query = new WP_Query($arg);
         if ($post->post_type == 'about') {
             get_template_part('content', 'about');
         }
-
+        if ($post->post_type == 'team') {
+            get_template_part('content', 'team');
+        }
 
 
 

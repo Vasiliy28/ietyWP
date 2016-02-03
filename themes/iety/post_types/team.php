@@ -3,13 +3,14 @@
  * Created by PhpStorm.
  * User: vasy
  * Date: 02.02.16
- * Time: 12:19
+ * Time: 14:33
  */
-if(! function_exists('welcome_post_type')):
 
-    function welcome_post_type(){
-        $singular = 'Welcome';
-        $pulural = 'Welcomes';
+if(! function_exists('team_post_type')):
+
+    function team_post_type(){
+        $singular = 'Team';
+        $pulural = 'Teams';
         $slug = str_replace( ' ', '_', strtolower( $singular ) );
 
         $labels = array(
@@ -37,8 +38,8 @@ if(! function_exists('welcome_post_type')):
             'show_ui'             => true,
             'show_in_menu'        => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 27,
-            'menu_icon'           => 'dashicons-welcome-view-site',
+            'menu_position'       => 35,
+            'menu_icon'           => 'dashicons-groups',
             'can_export'          => true,
             'delete_with_user'    => false,
             'hierarchical'        => true,
@@ -60,14 +61,10 @@ if(! function_exists('welcome_post_type')):
             )
 
         );
-        register_post_type('welcome', $args);
+        register_post_type('team', $args);
     };
 
 endif;
 
-add_action('init', 'welcome_post_type');
-
-
-
-
+add_action('init', 'team_post_type');
 

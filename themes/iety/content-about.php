@@ -14,13 +14,8 @@
                     <h1><?php the_title() ?></h1>
                 </header>
                 <?php
-
-
                 if( have_rows('content') ):
-
                     while ( have_rows('content') ) : the_row();
-
-
                     ?>
                         <article class="clearfix aboutUsContent">
                             <div class="col-md-4 aboutUsContentLeft">
@@ -39,19 +34,14 @@
                                         endwhile;?>
                                     </ul>
                                 <?php endif; ?>
-
                             </div>
                         </article>
                     <?php
                     endwhile;
-
-
                 endif;
-
                 ?>
-
-
             </div>
         </div>
     </div>
 </section>
+
