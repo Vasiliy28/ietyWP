@@ -4761,8 +4761,8 @@ msgid "Global Settings"
 msgstr "Глобальные настройки"
 
 #: wp-admin/setup-config.php:49
-msgid "Sorry, I need a wp-config-sample.php file to work from. Please re-upload this file to your WordPress installation."
-msgstr "Извините, мне нужен файл wp-config-sample.php в качестве примера. Пожалуйста, загрузите его снова из дистрибутива."
+msgid "Sorry, I need a wp-config.php file to work from. Please re-upload this file to your WordPress installation."
+msgstr "Извините, мне нужен файл wp-config.php в качестве примера. Пожалуйста, загрузите его снова из дистрибутива."
 
 #. translators: %s: install.php
 #: wp-admin/setup-config.php:55
