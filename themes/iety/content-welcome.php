@@ -6,7 +6,7 @@
  * Time: 11:14
  */
 ?>
-<section id="<?php the_title(); ?>" class="wrapperWelcome <?php echo (the_field('background_post'));  ?>" >
+<section id="<?php echo the_ID(); ?>" class="wrapperWelcome <?php echo (the_field('background_post'));  ?>" >
     <div class="container">
         <div class="welcome">
             <header class="headerSection ">

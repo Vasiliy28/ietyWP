@@ -7,7 +7,7 @@
  */
 ?>
 
-<section class="wrapperOurHistory <?php echo (the_field('background_post'));  ?> twentytwenty-container " id="ourHistory">
+<section id="<?php echo the_ID(); ?>" class="wrapperOurHistory <?php echo (the_field('background_post'));  ?> twentytwenty-container ">
 
     <div class="twentytwentyLeft" >
 

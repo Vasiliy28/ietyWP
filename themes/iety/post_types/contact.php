@@ -6,11 +6,11 @@
  * Time: 14:33
  */
 
-if(! function_exists('team_post_type')):
+if(! function_exists('contact_post_type')):
 
-    function team_post_type(){
-        $singular = 'Team';
-        $pulural = 'Teams';
+    function contact_post_type(){
+        $singular = 'Contact';
+        $pulural = 'Contacts';
         $slug = str_replace( ' ', '_', strtolower( $singular ) );
 
         $labels = array(
@@ -38,8 +38,8 @@ if(! function_exists('team_post_type')):
             'show_ui'             => true,
             'show_in_menu'        => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 40,
-            'menu_icon'           => 'dashicons-groups',
+            'menu_position'       => 35,
+            'menu_icon'           => 'dashicons-format-aside',
             'can_export'          => true,
             'delete_with_user'    => false,
             'hierarchical'        => true,
@@ -61,10 +61,10 @@ if(! function_exists('team_post_type')):
             )
 
         );
-        register_post_type('team', $args);
+        register_post_type('contact', $args);
     };
 
 endif;
 
-add_action('init', 'team_post_type');
+add_action('init', 'contact_post_type');
 

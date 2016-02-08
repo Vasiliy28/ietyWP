@@ -6,13 +6,13 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperContactUs backgroundDark " id="contactUs">
+<section id="<?php echo the_ID(); ?>" class="wrapperContactUs <?php echo (the_field('background_post'));  ?> " id="contactUs">
 
     <div class="container">
         <div class="contactUs">
             <header>
-                <h1>ContactUs</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ratione?</p>
+                <h1><?php the_title(); ?></h1>
+                <p><?php the_field('header_post')?></p>
             </header>
             <article class="contactUsContent">
                 <div class="col-sm-12 col-sm-offset-0 col-md-offset-1 col-md-2">
@@ -38,11 +38,17 @@
 
                 </div>
                 <div class="col-sm-offset-0 col-sm-12 col-md-offset-3 col-md-6 ">
-                    <form class="contactUsForm form-horizontal hid">
+                   <form class="contactUsForm form-horizontal hid">
+                       <!-- Hidden Required Fields -->
+                       <input type="hidden" name="project_name" value="Site Name">
+                       <input type="hidden" name="admin_email" value="<?php the_field('e-mail')?>">
+                       <input type="hidden" name="form_subject" value="Form Subject">
+                       <!-- END Hidden Required Fields -->
+
                         <fieldset>
                             <div class="form-group">
                                 <div class="input" id="input-1">
-                                    <input class="inputField" type="text" id="input1">
+                                    <input class="inputField" type="text" name="Name" requiredid="input1">
                                     <label class="inputLabel" for="input1">
                                         <span class="inputLabelContent" data-content="Name">Frequency</span>
                                     </label>
@@ -55,7 +61,7 @@
 
                                 </div>
                                 <div class="input" id="input-2">
-                                    <input class="inputField" type="text" id="inputText-2">
+                                    <input class="inputField" type="text" name="E-mail" required id="inputText-2">
                                     <label class="inputLabel" for="inputText-2">
                                         <span class="inputLabelContent" data-content="Name">Frequency</span>
                                     </label>
@@ -65,7 +71,7 @@
                                     </svg>
                                 </div>
                                 <div class="text" id="text-1">
-                                    <textarea class="inputField" type="text" rows="2" id="inputText-1"></textarea>
+                                    <textarea class="inputField" type="text" name="Massege" rows="2" id="inputText-1"></textarea>
 
                                     <label class="inputLabel" for="inputText-1">
                                         <span class="inputLabelContent" data-content="Name">name</span>
@@ -83,6 +89,8 @@
                             </div>
                         </fieldset>
                     </form>
+
+
                 </div>
 
             </article>

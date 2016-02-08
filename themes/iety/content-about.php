@@ -6,7 +6,7 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperAboutUs <?php echo (the_field('background_post'));  ?> " id="aboutUs">
+<section id="<?php echo the_ID(); ?>" class="wrapperAboutUs <?php echo (the_field('background_post'));  ?> ">
     <div class="container">
         <div class="row">
             <div class="aboutUs clearfix">

@@ -86,7 +86,13 @@ if ( ! function_exists( 'iety_setup' ) ) :
                 $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
                 $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
                 $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-                $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->type_label        ) .'"' : '';
+                if($item->title == "Home"){
+                    $attributes .= ! empty( $item->url )        ? ' href="#headerPage"' : '';
+                }else{
+                    $attributes .= ! empty( $item->url )        ? ' href="#'   . esc_attr( $item->object_id        ) .'"' : '';
+                }
+
+
 
                 // ссылка и околоссылочный текст
                 $item_output = $args->before;
@@ -209,6 +215,7 @@ require get_stylesheet_directory()  . '/post_types/history.php';
 require get_stylesheet_directory()  . '/post_types/about.php';
 require get_stylesheet_directory()  . '/post_types/team.php';
 require get_stylesheet_directory()  . '/post_types/price.php';
+require get_stylesheet_directory()  . '/post_types/contact.php';
 //require get_stylesheet_directory()  . '/inc/theme-options.php';
 
 

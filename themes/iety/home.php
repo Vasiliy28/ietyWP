@@ -14,7 +14,8 @@ $arg = array(
         'work',
         'about',
         'team',
-        'price'),
+        'price',
+        'contact'),
     'orderby' => array(
         'menu_order' => 'ASC',
         ),
@@ -44,6 +45,9 @@ $query = new WP_Query($arg);
         }
         if ($post->post_type == 'price') {
             get_template_part('content', 'price');
+        }
+        if ($post->post_type == 'contact') {
+            get_template_part('content', 'contact');
         }
 
         ?>

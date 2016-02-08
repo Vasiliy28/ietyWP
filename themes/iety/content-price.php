@@ -6,7 +6,7 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperPrice <?php echo (the_field('background_post'));  ?>" id="price">
+<section id="<?php echo the_ID(); ?>" class="wrapperPrice <?php echo (the_field('background_post'));  ?>">
     <span></span><span></span>
     <div class="container">
         <div class="row">

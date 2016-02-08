@@ -38,7 +38,7 @@ if(! function_exists('price_post_type')):
             'show_ui'             => true,
             'show_in_menu'        => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 40,
+            'menu_position'       => 45,
             'menu_icon'           => 'dashicons-cart',
             'can_export'          => true,
             'delete_with_user'    => false,

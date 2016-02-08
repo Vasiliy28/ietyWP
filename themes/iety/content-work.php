@@ -7,7 +7,7 @@
  * Time: 11:14
  */
 ?>
-<section class="wrapperOurWork <?php echo (the_field('background_post'));  ?>" id="ourWork">
+<section id="<?php echo the_ID(); ?>" class="wrapperOurWork <?php echo (the_field('background_post'));  ?>">
     <div class="container-fluid">
         <section class="ourWork">
             <header class="headerSection">
