@@ -91,16 +91,12 @@ if ( ! function_exists( 'iety_setup' ) ) :
                 }else{
                     $attributes .= ! empty( $item->url )        ? ' href="#'   . esc_attr( $item->object_id        ) .'"' : '';
                 }
-
-
-
                 // ссылка и околоссылочный текст
                 $item_output = $args->before;
                 $item_output .= '<a'. $attributes .'>';
                 $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
                 $item_output .= '</a>';
                 $item_output .= $args->after;
-
                 $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
             }
         }
@@ -182,6 +178,37 @@ function add_my_post_types_to_query( $query ) {
 
     return $query;
 }
+/**
+ * Register three Twenty Fourteen widget areas.
+ *
+ * @since Twenty Fourteen 1.0
+ */
+function twentyfourteen_widgets_init() {
+    require get_stylesheet_directory() . '/inc/widgets.php';
+    register_widget( 'Twenty_Fourteen_Ephemera_Widget' );
+
+
+    register_sidebar( array(
+        'name'          => __( 'Content Sidebar', 'twentyfourteen' ),
+        'id'            => 'sidebar-2',
+        'description'   => __( 'Additional sidebar that appears on the right.', 'twentyfourteen' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Widget Area', 'twentyfourteen' ),
+        'id'            => 'sidebar-3',
+        'description'   => __( 'Appears in the footer section of the site.', 'twentyfourteen' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title">',
+        'after_title'   => '</h1>',
+    ) );
+}
+//add_action( 'widgets_init', 'twentyfourteen_widgets_init' );
+
 
 /*
  * create theme for dafault

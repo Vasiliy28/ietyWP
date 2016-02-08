@@ -17,7 +17,7 @@
                 <div><span class="sep"></span></div>
             </header>
             <article class="welcomeContent clearfix">
-                <div class="col-xs-12 hidden-md col-md-push-4 col-md-4">
+                <div class="col-xs-12 col-md-push-4 col-md-4">
                     <figure class="clearfix welcomeLog" id="welcomeLog">
                         <?php
 
