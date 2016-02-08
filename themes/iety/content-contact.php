@@ -18,21 +18,44 @@
                 <div class="col-sm-12 col-sm-offset-0 col-md-offset-1 col-md-2">
                     <div class="contactUsBoxes clearfix">
                         <div class="contactUsBox ">
-                            <div class="contactUsIcon"><i class="fa fa-map-marker"></i></div>
-                            <h4>Address</h4>
-                            <p>771 Mercer Rd
-                                Butler, PA 16001-1107</p>
+                        <?php
+                        if( have_rows('address') ):
+                            while ( have_rows('address') ) : the_row();?>
+                                <div class="contactUsIcon"><?php the_sub_field('icon');?></div>
+                                <h4><?php the_sub_field('name');?></h4>
+                                <p><?php $options = get_option('sample_theme_options');
+                                    echo $options['addresstext'] ?></p>
+                                <?php
+                            endwhile;
+                        endif;
+                        ?>
                         </div>
                         <div class="contactUsBox ">
-                            <div class="contactUsIcon"><i class="fa fa-mobile"></i></div>
-                            <h4>Phone:</h4>
-                            <p>+7 999 99 99 99</p>
+                            <?php
+                            if( have_rows('phone') ):
+                                while ( have_rows('phone') ) : the_row();?>
+                                    <div class="contactUsIcon"><?php the_sub_field('icon');?></div>
+                                    <h4><?php the_sub_field('name');?></h4>
+                                    <p><?php $options = get_option('sample_theme_options');
+                                        echo $options['phonetext'] ?></p>
+                                    <?php
+                                endwhile;
+                            endif;
+                            ?>
                         </div>
                         <div class="contactUsBox ">
-                            <div class="contactUsIcon"><i class="fa fa-hand-pointer-o"></i></div>
-                            <h4>WebSite:</h4>
-                            <a href="#">www.etti.com</a>
+                            <?php
+                            if( have_rows('website') ):
+                                while ( have_rows('website') ) : the_row();?>
+                                    <div class="contactUsIcon"><?php the_sub_field('icon');?></div>
+                                    <a href="<?php $options = get_option('sample_theme_options');
+                                    echo $options['sitetext'] ?>"><h4><?php the_sub_field('name');?></h4></a>
+                                    <?php
+                                endwhile;
+                            endif;
+                            ?>
                         </div>
+
                     </div>
 
 

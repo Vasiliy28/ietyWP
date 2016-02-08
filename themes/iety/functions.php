@@ -216,7 +216,7 @@ require get_stylesheet_directory()  . '/post_types/about.php';
 require get_stylesheet_directory()  . '/post_types/team.php';
 require get_stylesheet_directory()  . '/post_types/price.php';
 require get_stylesheet_directory()  . '/post_types/contact.php';
-//require get_stylesheet_directory()  . '/inc/theme-options.php';
+require get_stylesheet_directory()  . '/inc/theme-options.php';
 
 
 
