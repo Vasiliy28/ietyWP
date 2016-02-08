@@ -135,7 +135,7 @@ function iety_scripts() {
     wp_enqueue_style('twentytwenty' , get_stylesheet_directory_uri() . '/css/twentytwenty.css');
     wp_enqueue_style('magnific-popup' , get_stylesheet_directory_uri() . '/css/magnific-popup.css');
     wp_enqueue_style('main' , get_stylesheet_directory_uri() . '/css/main.css');
-    wp_enqueue_style('media' , get_stylesheet_directory_uri() . '/css/media.css',array('main'));
+    wp_enqueue_style('mediaIety' , get_stylesheet_directory_uri() . '/css/media.css');
 
     wp_enqueue_style( 'html5', 'http://html5shiv.googlecode.com/svn/trunk/html5.js');
     wp_style_add_data( 'html5', 'conditional', 'IE' );

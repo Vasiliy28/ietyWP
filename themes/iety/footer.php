@@ -7,14 +7,18 @@
  */
 ?>
 
-
-
 <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
     <?php get_sidebar('footer'); ?>
 <?php endif; ?>
 
 <a class="go-top"><i class="fa fa-angle-up"></i></a>
-
+<div class="wrapperHamburger-icon visible-xs">
+    <a id="hamburger-icon" class="hamburger-icon" href="#" title="Menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+    </a>
+</div>
 <footer class="mainFooter ">
     <div class="container">
         <div class="row">
