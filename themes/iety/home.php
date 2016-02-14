@@ -60,7 +60,7 @@ $query = new WP_Query($arg);
 <?php endif; */?>
 
 <?php get_template_part('content', 'welcome');?>
-
+<?php get_template_part('content', 'history');?>
 
 <?php
 if (get_theme_mod('blog_layout', 'classic') == 'classic') :

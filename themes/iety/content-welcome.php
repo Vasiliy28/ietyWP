@@ -18,11 +18,9 @@ $arg = array(
 $query = new WP_Query($arg);
 ?>
 
-
 <?php if ($query->have_posts()) : ?>
 
-<?php while ($query->have_posts()) :
-$query->the_post(); ?>
+<?php while ($query->have_posts()) :$query->the_post(); ?>
 <?php if (has_term('welcome_header', 'type_post_welcome')): ?>
 <section id="<?php echo the_ID(); ?>" class="wrapperWelcome <?php echo(the_field('background_post')); ?>">
     <div class="container">
