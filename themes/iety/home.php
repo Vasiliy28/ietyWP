@@ -7,7 +7,7 @@
  */
 get_header(); ?>
 <?php
-$arg = array(
+/*$arg = array(
     'post_type' => array(
         'welcome',
         'history',
@@ -28,7 +28,7 @@ $query = new WP_Query($arg);
     <?php while ($query->have_posts()) : $query->the_post(); ?>
 
         <?php
-        if ($post->post_type == 'history') {
+        if ('history' == get_post_type()) {
             get_template_part('content', 'history');
         }
         if ($post->post_type == 'welcome') {
@@ -57,7 +57,9 @@ $query = new WP_Query($arg);
 
     <?php get_template_part('content', 'none'); ?>
 
-<?php endif; ?>
+<?php endif; */?>
+
+<?php get_template_part('content', 'welcome');?>
 
 
 <?php
