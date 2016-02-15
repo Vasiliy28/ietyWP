@@ -626,7 +626,7 @@ figure.ourWorkEffect {
     max-width: 475px;
     margin: 0 auto;
     width: 100%;
-    max-height: 300px;
+
     height: auto;
     text-align: center;
     cursor: pointer;
@@ -638,7 +638,7 @@ figure.ourWorkEffect img {
     display: block;
     min-height: 100%;
     width: 100%;
-    max-height: 300px;
+
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     -webkit-backface-visibility: hidden;
@@ -649,7 +649,7 @@ figure.ourWorkEffect > span{
     position: absolute;
     left: 0;
     width: 100%;
-    max-height: 300px;
+
     backface-visibility: hidden;
     height: 100%;
     bottom: 0;

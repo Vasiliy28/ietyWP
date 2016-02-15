@@ -96,7 +96,7 @@ if(! function_exists('work_taxonomy')):
         );
         $args = array(
 
-            'hierarchical'          => false,
+            'hierarchical'          => true,
             'labels'                => $labels,
             'show_ui'               => true,
             'show_admin_column'     => true,
@@ -113,10 +113,10 @@ endif;
 add_action('init','work_taxonomy');
 
 
-if(! function_exists('work_taxonomy2')):
-    function work_taxonomy2(){
-        $singular = 'fg';
-        $plural = 'dfgds';
+if(! function_exists('types_of_post_work_taxonomy')):
+    function types_of_post_work_taxonomy(){
+        $singular = 'Type of post';
+        $plural = 'Type of posts';
         $slug = str_replace( ' ', '_', strtolower( $singular ) );
         $labels = array(
             'name'                       => $plural,
@@ -138,7 +138,7 @@ if(! function_exists('work_taxonomy2')):
         );
         $args = array(
 
-            'hierarchical'          => false,
+            'hierarchical'          => true,
             'labels'                => $labels,
             'show_ui'               => true,
             'show_admin_column'     => true,
@@ -152,5 +152,5 @@ if(! function_exists('work_taxonomy2')):
     };
 endif;
 
-add_action('init','work_taxonomy2');
+add_action('init','types_of_post_work_taxonomy');
 
