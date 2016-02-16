@@ -5,7 +5,23 @@
  * Date: 25.01.16
  * Time: 11:14
  */
+$arg = array(
+    'post_type' => array(
+        'about',
+    ),
+    'orderby' => array(
+        'menu_order' => 'ASC',
+    ),
+    'posts_per_page' =>  1,
+);
+$query = new WP_Query($arg);
 ?>
+
+<?php if ($query->have_posts()) : ?>
+
+<?php while ($query->have_posts()) :$query->the_post(); ?>
+
+
 <section id="<?php echo the_ID(); ?>" class="wrapperAboutUs <?php echo (the_field('background_post'));  ?> ">
     <div class="container">
         <div class="row">
@@ -45,3 +61,5 @@
     </div>
 </section>
 
+    <?php endwhile; ?>
+<?php endif; ?>
