@@ -43,11 +43,11 @@ $query_name_of_colum = new WP_Query(array(
 
 <?php if ($query_header->have_posts()): ?>
 <?php while ($query_header->have_posts()):$query_header->the_post() ?>
-<section id="<?php echo the_ID(); ?>" class="wrapperOurHistory <?php echo(the_field('background_post')); ?> twentytwenty-container ">
-    <div class="twentytwentyLeft"></div>
-    <div class="twentytwentyRight"></div>
+<section id="<?php echo the_ID(); ?>" class="wrapperOurHistory <?php echo(the_field('background_post')); ?>">
+
     <div class="container ">
         <div class="ourHistory ">
+            <span></span>
             <header class="headerSectionLight">
                 <h1><?php the_field('name_section') ?></h1>
             </header>
@@ -55,7 +55,7 @@ $query_name_of_colum = new WP_Query(array(
             <?php endif; ?>
             <?php wp_reset_query();?>
             <article class="ourHistoryContent clearfix ">
-                <div class="col-xs-6 col-md-6 leftContentHistory">
+                <div class="col-xs-12 col-sm-6 leftContentHistory">
                     <?php if ($query_name_of_colum ->have_posts()): ?>
                     <?php while ($query_name_of_colum->have_posts()):$query_name_of_colum->the_post() ?>
                             <?php if (have_rows('name_of_colum')):
@@ -89,7 +89,7 @@ $query_name_of_colum = new WP_Query(array(
 
                     <?php wp_reset_query();?>
                 </div>
-                <div class="col-xs-6 rightContentHistory">
+                <div class="col-xs-12 col-sm-6 rightContentHistory">
                     <?php if ($query_name_of_colum ->have_posts()): ?>
                         <?php while ($query_name_of_colum->have_posts()):$query_name_of_colum->the_post() ?>
                             <?php if (have_rows('name_of_colum')):

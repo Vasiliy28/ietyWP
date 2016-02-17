@@ -35,7 +35,7 @@ $query_price = new WP_Query(array(
                 <?php wp_reset_query(); ?>
                 <?php if ($query_price->have_posts()): ?>
                     <?php while ($query_price->have_posts()):$query_price->the_post() ?>
-                        <div class="col-xs-6 col-md-3">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
                             <article class="priceing">
                                 <header>
                                     <h1><?php the_field('name_card') ?></h1>

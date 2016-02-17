@@ -13,6 +13,10 @@
         $('.popup').magnificPopup({
             type: 'image'
         });
+        $('.popup_team').magnificPopup({
+            type:'inline',
+            midClick: true,
+        });
 
 
         $(window).scroll(function () {

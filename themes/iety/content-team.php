@@ -40,13 +40,24 @@ $query_worker = new WP_Query(array(
                 <?php while ($query_worker->have_posts()):$query_worker->the_post() ?>
                         <div class="col-md-6">
                             <figure>
-                                <a href=""><img src="<?php the_field('image') ?>" alt="" class="clearfix"></a>
-                                <figcaption class="clearfix">
+                                <a href="#for_popup_<?php echo the_ID(); ?>" class="popup_team" ><img src="<?php the_field('image') ?>" alt="" class="clearfix"></a>
+                                <figcaption class="clearfix adout_worker">
                                     <h1> <?php the_field('name') ?></h1>
                                     <h4><?php the_field('profession') ?></h4>
                                     <p><?php the_field('info') ?></p>
                                 </figcaption>
                             </figure>
+                            <div class="hidden">
+                                <figure id="for_popup_<?php echo the_ID(); ?>" class="for_popup">
+                                    <img src="<?php the_field('image') ?>" alt="" class="clearfix">
+                                    <figcaption class="clearfix">
+                                        <h1> <?php the_field('name') ?></h1>
+                                        <h4><?php the_field('profession') ?></h4>
+                                        <p><?php the_field('info') ?></p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
                         </div>
                 <?php endwhile; ?>
                 <?php endif; ?>

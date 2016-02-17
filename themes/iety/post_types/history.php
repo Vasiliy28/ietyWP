@@ -99,7 +99,7 @@ if(! function_exists('history_post_type_taxonomy')):
             'show_admin_column'     => false,
             'show_in_quick_edit'    => true,
             'show_tagcloud'         => false,
-            'show_in_nav_menus'     =>true,
+            'show_in_nav_menus'     =>false,
 
 
             'update_count_callback' => '_update_post_term_count',
@@ -143,7 +143,7 @@ if(! function_exists('history_when_taxonomy')):
             'show_admin_column'     => false,
             'show_in_quick_edit'    => true,
             'show_tagcloud'         => false,
-            'show_in_nav_menus'     =>true,
+            'show_in_nav_menus'     =>false,
 
 
 

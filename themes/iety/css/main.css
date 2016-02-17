@@ -560,7 +560,17 @@ body >section{
 /*******ourHistory**********/
 
 .ourHistory{
-    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.ourHistory span{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    width:  2px;
+    background-color: black;
+    height:100%;
 }
 
 .ourHistoryContent >div > header,
@@ -582,6 +592,7 @@ body >section{
 .leftContentHistory {
     text-align: right;
     padding-right: 30px;
+
 }
 .rightContentHistory {
     padding-left: 30px;
@@ -1211,7 +1222,6 @@ textarea.inputField {
     text-align: left;
 }
 
-
 /*↑↑↑↑↑↑↑ourTeam↑↑↑↑↑↑*/
 
 /*****price********/
@@ -1261,6 +1271,7 @@ textarea.inputField {
     max-height: 425px;
     opacity: 0;
     font-size: 14px;
+    max-width: 265px;
 }
 .priceing header{
     text-align: center;

@@ -103,7 +103,7 @@ if(! function_exists('price_taxonomy')):
             'show_admin_column'     => false,
             'show_in_quick_edit'    => true,
             'show_tagcloud'         => false,
-            'show_in_nav_menus'     =>true,
+            'show_in_nav_menus'     =>false,
 
 
 
