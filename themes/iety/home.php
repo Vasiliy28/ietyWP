@@ -65,6 +65,7 @@ $query = new WP_Query($arg);
 <?php get_template_part('content', 'about');?>
 <?php get_template_part('content', 'contact');?>
 <?php get_template_part('content', 'team');?>
+<?php get_template_part('content', 'price');?>
 
 <?php
 if (get_theme_mod('blog_layout', 'classic') == 'classic') :

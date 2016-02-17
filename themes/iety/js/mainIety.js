@@ -77,11 +77,11 @@
             $(".aboutUsContentRight").animated("fadeInRight", "fadeOutRight", 30, -300)
             $(".contactUsBox").animated("zoomIn", "zoomOut", 20, 0)
             $('.contactUs header').animated('slideInDown', 'slideOutUp', 20, -100)
-            $('.ourTeamLeft figure').animated("fadeInLeft", "zoomOut", 20, -20)
-            $('.ourTeamRight figure').animated("fadeInRight", "zoomOut", 20, -20)
+            $('.ourTeamContent > div:even').animated("fadeInLeft", "zoomOut", 20, -20)
+            $('.ourTeamContent > div:odd').animated("fadeInRight", "zoomOut", 20, -20)
             $('.priceing').animated("zoomIn", "zoomOut", -100, -120)
-            $('.ourTeamContent > div:odd').animated("zoomInLeft", "zoomOutLeft", 20, -50)
-            $('.ourTeamContent > div:even').animated("zoomInRight", "zoomOutRight", -20, -50)
+            $('.welcomeContentLeft').animated("zoomInLeft", "zoomOutLeft", 20, -50)
+            $('.welcomeContentRight').animated("zoomInRight", "zoomOutRight", -20, -50)
         }
 
 
