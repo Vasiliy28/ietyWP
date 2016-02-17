@@ -3,9 +3,7 @@
  * Sydney child functions
  *
  */
-
 show_admin_bar(false);
-
 /**
  * Slider
  */

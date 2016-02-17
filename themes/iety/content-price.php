@@ -22,9 +22,7 @@ $query_price = new WP_Query(array(
     ),
     'posts_per_page' => 4,
 ));
-
 ?>
-
 <?php if ($query_header->have_posts()): ?>
 <?php while ($query_header->have_posts()):$query_header->the_post() ?>
 <section id="<?php echo the_ID(); ?>" class="wrapperPrice <?php echo(the_field('background_post')); ?>">
