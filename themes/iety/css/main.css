@@ -1150,7 +1150,7 @@ textarea.inputField {
 .ourTeamContent figure {
     overflow: hidden;
     padding: 20px;
-    opacity: 0;
+
 }
 
 .ourTeamContent figure img {
@@ -1165,6 +1165,9 @@ textarea.inputField {
 
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+}
+.ourTeamContent div{
+    opacity: 0;
 }
 .ourTeamContent figure img:hover{
     -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
@@ -1188,23 +1191,23 @@ textarea.inputField {
     font-weight: 100;
     font-size: 14px;
 }
-.ourTeamContent > div:nth-child(1) figure img {
+.ourTeamContent > div:nth-child(odd) figure img {
     float: right;
     clear: both;
     margin: 0 0 0 25px;
 }
 
-.ourTeamContent > div:nth-child(2) figure img {
+.ourTeamContent > div:nth-child(even) figure img {
     float: left;
     margin: 0 25px 0 0;
 }
 
-.ourTeamContent > div:nth-child(1) figure figcaption {
+.ourTeamContent > div:nth-child(odd) figure figcaption {
     text-align: right;
 
 }
 
-.ourTeamContent > div:nth-child(2) figure figcaption {
+.ourTeamContent > div:nth-child(even) figure figcaption {
     text-align: left;
 }
 

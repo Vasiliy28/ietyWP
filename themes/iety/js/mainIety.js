@@ -80,8 +80,8 @@
             $('.ourTeamLeft figure').animated("fadeInLeft", "zoomOut", 20, -20)
             $('.ourTeamRight figure').animated("fadeInRight", "zoomOut", 20, -20)
             $('.priceing').animated("zoomIn", "zoomOut", -100, -120)
-            $('.welcomeContentLeft').animated("zoomInLeft", "zoomOutLeft", 20, -50)
-            $('.welcomeContentRight').animated("zoomInRight", "zoomOutRight", -20, -50)
+            $('.ourTeamContent > div:odd').animated("zoomInLeft", "zoomOutLeft", 20, -50)
+            $('.ourTeamContent > div:even').animated("zoomInRight", "zoomOutRight", -20, -50)
         }
 
 

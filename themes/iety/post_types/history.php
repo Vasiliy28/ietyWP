@@ -102,7 +102,6 @@ if(! function_exists('history_post_type_taxonomy')):
             'show_in_nav_menus'     =>true,
 
 
-
             'update_count_callback' => '_update_post_term_count',
             'query_var'             => true,
             'rewrite'               => array( 'slug' => $slug ),

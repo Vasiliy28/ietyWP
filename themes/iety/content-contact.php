@@ -26,7 +26,7 @@ $query = new WP_Query($arg);
         <div class="contactUs">
             <header>
                 <h1><?php the_title(); ?></h1>
-                <p><?php the_field('header_post')?></p>
+                <p><?php the_field('discription')?></p>
             </header>
             <article class="contactUsContent">
                 <div class="col-sm-12 col-sm-offset-0 col-md-offset-1 col-md-2">
@@ -138,3 +138,4 @@ $query = new WP_Query($arg);
 </section>
     <?php endwhile; ?>
 <?php endif; ?>
+<?php wp_reset_query();?>

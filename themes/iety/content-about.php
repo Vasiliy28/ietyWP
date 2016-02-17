@@ -63,3 +63,4 @@ $query = new WP_Query($arg);
 
     <?php endwhile; ?>
 <?php endif; ?>
+<?php wp_reset_query();?>
