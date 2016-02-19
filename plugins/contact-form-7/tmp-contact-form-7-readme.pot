@@ -314,7 +314,7 @@ msgid "If you have created your own language pack, or have an update of an exist
 msgstr ""
 
 #. Found in installation list item.
-msgid "Upload the entire <code>contact-form-7</code> folder to the <code>/wp-content/plugins/</code> directory."
+msgid "Upload the entire <code>contact-form-7</code> folder to the <code>/wp-contentd/plugins/</code> directory."
 msgstr ""
 
 #. Found in installation list item.

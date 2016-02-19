@@ -47,6 +47,7 @@ if(! function_exists('welcome_post_type')):
             'capability_type'     => 'post',
             'map_meta_cap'        => true,
 
+
             // 'capabilities' => array(),
             'rewrite'             => array(
                 'slug' => $slug,
@@ -57,7 +58,10 @@ if(! function_exists('welcome_post_type')):
             'supports'            => array(
                 'title',
                 'page-attributes'
-            )
+            ),
+            'taxonomies'          => array(
+                'category'
+            ),
 
         );
         register_post_type('welcome', $args);
@@ -66,6 +70,7 @@ if(! function_exists('welcome_post_type')):
 endif;
 
 add_action('init', 'welcome_post_type');
+
 
 
 

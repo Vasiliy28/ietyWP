@@ -483,7 +483,7 @@
 		
 		
 		// vars
-		var wp_content = $('#wp-content-wrap').exists(),
+		var wp_content = $('#wp-contentd-wrap').exists(),
 			wp_acf_settings = $('#wp-acf_settings-wrap').exists()
 			mode = 'tmce';
 		
@@ -521,7 +521,7 @@
 			// Add events to content editor
 			if( wp_content )
 			{
-				_wysiwyg.set({ $el : $('#wp-content-wrap') }).add_events();
+				_wysiwyg.set({ $el : $('#wp-contentd-wrap') }).add_events();
 			}
 			
 			

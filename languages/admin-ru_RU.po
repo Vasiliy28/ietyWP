@@ -192,7 +192,7 @@ msgstr "Мы используем эту информацию, чтобы соз
 msgid "Because you are using %1$s, the sites in your WordPress network must use sub-directories. Consider using %2$s if you wish to use sub-domains."
 msgstr "Поскольку вы используете %1$s, сайты вашей сети должны использовать подкаталоги. Если вы хотите использовать поддомены, стоит перейти на %2$s."
 
-#. translators: %s: wp-content/uploads
+#. translators: %s: wp-contentd/uploads
 #: wp-admin/options-media.php:110
 msgid "Default is %s"
 msgstr "По умолчанию: %s"
@@ -574,8 +574,8 @@ msgstr "Адрес сервера"
 
 #: wp-admin/includes/network.php:219 wp-admin/includes/network.php:526
 #: wp-admin/includes/network.php:566
-msgid "Subdirectory networks may not be fully compatible with custom wp-content directories."
-msgstr "Совместимость сетей в режиме подкаталогов с произвольными директориями wp-content может быть неполной."
+msgid "Subdirectory networks may not be fully compatible with custom wp-contentd directories."
+msgstr "Совместимость сетей в режиме подкаталогов с произвольными директориями wp-contentd может быть неполной."
 
 #. translators: 1: hostname
 #: wp-admin/includes/network.php:209
@@ -6017,7 +6017,7 @@ msgstr "Можно использовать одну из этих классн�
 msgid "Collapse menu"
 msgstr "Свернуть меню"
 
-#. translators: %s: wp-content directory name
+#. translators: %s: wp-contentd directory name
 #: wp-admin/includes/class-wp-plugins-list-table.php:457
 msgid "Drop-ins are advanced plugins in the %s directory that replace WordPress functionality when present."
 msgstr "&laquo;Вкрапления&raquo; &#8212; это расширенные плагины, которые при размещении в каталоге %s заменяют функциональность WordPress."
@@ -6521,8 +6521,8 @@ msgid "If you do not remember your credentials, you should contact your web host
 msgstr "Если вы не помните координаты, можно узнать их в службе поддержки вашего хостинг-провайдера."
 
 #: wp-admin/theme-install.php:79
-msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your <code>/wp-content/themes</code> directory."
-msgstr "Можно загрузить тему вручную, если вы уже скачали ZIP-архив на свой компьютер (убедитесь, что её источник заслуживает доверия). Также можно выбрать старомодный способ и скопировать каталог скачанной темы в директорию <code>/wp-content/themes</code> по FTP."
+msgid "You can Upload a theme manually if you have already downloaded its ZIP archive onto your computer (make sure it is from a trusted and original source). You can also do it the old-fashioned way and copy a downloaded theme&#8217;s folder via FTP into your <code>/wp-contentd/themes</code> directory."
+msgstr "Можно загрузить тему вручную, если вы уже скачали ZIP-архив на свой компьютер (убедитесь, что её источник заслуживает доверия). Также можно выбрать старомодный способ и скопировать каталог скачанной темы в директорию <code>/wp-contentd/themes</code> по FTP."
 
 #: wp-admin/user-edit.php:39
 msgid "Your profile contains information about you (your &#8220;account&#8221;) as well as some personal options related to using WordPress."
@@ -9352,8 +9352,8 @@ msgid "Unable to locate WordPress Root directory."
 msgstr "Не удалось определить корневую директорию WordPress."
 
 #: wp-admin/includes/class-wp-upgrader.php:131
-msgid "Unable to locate WordPress Content directory (wp-content)."
-msgstr "Не удалось определить директорию содержимого WordPress (wp-content)."
+msgid "Unable to locate WordPress Content directory (wp-contentd)."
+msgstr "Не удалось определить директорию содержимого WordPress (wp-contentd)."
 
 #: wp-admin/includes/class-wp-upgrader.php:132 wp-admin/includes/plugin.php:804
 msgid "Unable to locate WordPress Plugin directory."

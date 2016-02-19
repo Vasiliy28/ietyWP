@@ -3,10 +3,7 @@
  * Sydney child functions
  *
  */
-
 show_admin_bar(false);
-
-
 /**
  * Slider
  */
@@ -26,7 +23,8 @@ if ( ! function_exists( 'iety_setup' ) ) :
 
 // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
-            'headerMenuIety' =>( 'Header Menu Iety' )
+            'headerMenuIety' =>( 'Header Menu Iety' ),
+            'footerMenuIety' =>( 'Footer Menu Iety' )
         ) );
 
         class True_Walker_Nav_Menu extends Walker_Nav_Menu {

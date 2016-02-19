@@ -376,7 +376,7 @@ class Better_Font_Awesome_Library {
 		 *
 		 * If we're in a theme, than plugin_dir_url() will return a
 		 * funky URL that includes the actual file path (e.g.
-		 * /srv/www/site_name/wp-content/...)
+		 * /srv/www/site_name/wp-contentd/...)
 		 */
 		$is_theme = false;
 		if ( strpos( $plugin_dir, $bfa_directory ) !== false ) {

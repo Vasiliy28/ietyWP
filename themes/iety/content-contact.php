@@ -5,14 +5,28 @@
  * Date: 25.01.16
  * Time: 11:14
  */
+$arg = array(
+    'post_type' => array(
+        'contact',
+    ),
+    'orderby' => array(
+        'menu_order' => 'ASC',
+    ),
+    'posts_per_page' =>  1,
+);
+$query = new WP_Query($arg);
 ?>
+
+<?php if ($query->have_posts()) : ?>
+
+<?php while ($query->have_posts()) :$query->the_post(); ?>
 <section id="<?php echo the_ID(); ?>" class="wrapperContactUs <?php echo (the_field('background_post'));  ?> " id="contactUs">
 
     <div class="container">
         <div class="contactUs">
             <header>
                 <h1><?php the_title(); ?></h1>
-                <p><?php the_field('header_post')?></p>
+                <p><?php the_field('discription')?></p>
             </header>
             <article class="contactUsContent">
                 <div class="col-sm-12 col-sm-offset-0 col-md-offset-1 col-md-2">
@@ -122,3 +136,6 @@
 
     </div>
 </section>
+    <?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_query();?>

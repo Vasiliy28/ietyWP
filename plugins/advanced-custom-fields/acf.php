@@ -129,7 +129,7 @@ class acf
         
         if( $count < 1 )
         {
-	        // if file is in wp-content folder
+	        // if file is in wp-contentd folder
 	        $wp_content_dir = str_replace('\\' ,'/', WP_CONTENT_DIR); 
 	        $dir = str_replace($wp_content_dir, content_url(), $dir, $count);
         }

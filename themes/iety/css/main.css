@@ -560,7 +560,17 @@ body >section{
 /*******ourHistory**********/
 
 .ourHistory{
-    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.ourHistory span{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    width:  2px;
+    background-color: black;
+    height:100%;
 }
 
 .ourHistoryContent >div > header,
@@ -582,6 +592,7 @@ body >section{
 .leftContentHistory {
     text-align: right;
     padding-right: 30px;
+
 }
 .rightContentHistory {
     padding-left: 30px;
@@ -626,7 +637,7 @@ figure.ourWorkEffect {
     max-width: 475px;
     margin: 0 auto;
     width: 100%;
-    max-height: 300px;
+
     height: auto;
     text-align: center;
     cursor: pointer;
@@ -638,7 +649,7 @@ figure.ourWorkEffect img {
     display: block;
     min-height: 100%;
     width: 100%;
-    max-height: 300px;
+
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     -webkit-backface-visibility: hidden;
@@ -649,7 +660,7 @@ figure.ourWorkEffect > span{
     position: absolute;
     left: 0;
     width: 100%;
-    max-height: 300px;
+
     backface-visibility: hidden;
     height: 100%;
     bottom: 0;
@@ -1150,7 +1161,7 @@ textarea.inputField {
 .ourTeamContent figure {
     overflow: hidden;
     padding: 20px;
-    opacity: 0;
+
 }
 
 .ourTeamContent figure img {
@@ -1165,6 +1176,9 @@ textarea.inputField {
 
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+}
+.ourTeamContent div{
+    opacity: 0;
 }
 .ourTeamContent figure img:hover{
     -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 1);
@@ -1188,26 +1202,25 @@ textarea.inputField {
     font-weight: 100;
     font-size: 14px;
 }
-.ourTeamContent > div:nth-child(1) figure img {
+.ourTeamContent > div:nth-child(odd) figure img {
     float: right;
     clear: both;
     margin: 0 0 0 25px;
 }
 
-.ourTeamContent > div:nth-child(2) figure img {
+.ourTeamContent > div:nth-child(even) figure img {
     float: left;
     margin: 0 25px 0 0;
 }
 
-.ourTeamContent > div:nth-child(1) figure figcaption {
+.ourTeamContent > div:nth-child(odd) figure figcaption {
     text-align: right;
 
 }
 
-.ourTeamContent > div:nth-child(2) figure figcaption {
+.ourTeamContent > div:nth-child(even) figure figcaption {
     text-align: left;
 }
-
 
 /*↑↑↑↑↑↑↑ourTeam↑↑↑↑↑↑*/
 
@@ -1258,6 +1271,7 @@ textarea.inputField {
     max-height: 425px;
     opacity: 0;
     font-size: 14px;
+    max-width: 265px;
 }
 .priceing header{
     text-align: center;

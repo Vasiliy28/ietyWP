@@ -265,7 +265,24 @@
 	figure.ourWorkEffect{
 		margin: 10px auto;
 	}
+	.ourHistory span{
+		display: none;
+	}
+	.rightContentHistory{
+		padding-left: 0;
+	}
+	.leftContentHistory {
+		text-align:left;
+	}
+	.history header,
+	.history .year{
+		text-align: center;
 
+		display: block;
+	}
+	.ourHistoryContent i{
+		margin: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -276,6 +293,29 @@
 	}
 	.mainLink{
 		font-size: 3em;
+	}
+	.adout_worker{
+		display: none;
+	}
+	.popup_team img{
+		float: none!important;
+		margin: 0 auto!important;
+	}
+	.for_popup{
+		border: 1px solid white;
+		padding: 15px;
+		margin-top: 20%;
+	}
+	.for_popup img{
+		display: block;
+		margin: 0 auto;
+	}
+	.for_popup figcaption{
+		text-align: center;
+		color: white;
+	}
+	.for_popup .mfp-close{
+		color: #CCFF33;
 	}
 }
 

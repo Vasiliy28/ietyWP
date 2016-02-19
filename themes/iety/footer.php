@@ -11,6 +11,20 @@
     <?php get_sidebar('footer'); ?>
 <?php endif; ?>
 
+<?php $query_footer = new WP_Query(array(
+'post_type' => 'post',
+'orderby' => array(
+'menu_order' => 'ASC',
+),
+    'post_name' => 'footer',
+    'posts_per_page' => 1,
+));
+
+?>
+
+
+
+
 <a class="go-top"><i class="fa fa-angle-up"></i></a>
 <div class="wrapperHamburger-icon visible-xs">
     <a id="hamburger-icon" class="hamburger-icon" href="#" title="Menu">
@@ -23,30 +37,35 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-6 col-md-4  footerAbout">
-                <h3>Ietty</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, assumenda aut ipsam laboriosam nihil
-                    tenetur?</p>
-                <p>Accusamus aliquam aliquid ea error nemo odit, repellendus voluptates. Dolore est in labore obcaecati
-                    officia?</p>
+                <?php if ($query_footer->have_posts()): ?>
+                    <?php while ($query_footer->have_posts()):$query_footer->the_post() ?>
+                        <?php the_content() ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
             <div class="col-xs-6  col-sm-3 col-sm-offset-0 col-md-offset-1 col-md-3 footerLinks" >
                 <h3>Quick Lincks</h3>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <?php wp_nav_menu( array(
+                    'theme_location'  => 'footerMenuIety',
+                    'walker' => new True_Walker_Nav_Menu()
+                ) ); ?>
             </div>
             <div class="col-xs-12 col-sm-4 footerFollow">
-                <h3>Following Us</h3>
-                <div class="iconsGroupFooter">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                </div>
+
+                <?php if ($query_footer->have_posts()): ?>
+                    <?php while ($query_footer->have_posts()):$query_footer->the_post() ?>
+                        <h3>Following Us</h3>
+                        <?php if (have_rows('links')) : ?>
+                            <div class="iconsGroupFooter">
+                                <?php while (have_rows('links')) : the_row();
+                                    echo '<a href="' . get_sub_field('link') . '">' . get_sub_field('icon') . '</a>';
+                                endwhile; ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
+
             </div>
         </div>
         <div class="row">

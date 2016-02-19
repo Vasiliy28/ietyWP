@@ -61,7 +61,11 @@ function work_post_type(){
             'title',
             'page-attributes'
 
-        )
+        ),
+        'taxonomies'          => array(
+            'category'
+        ),
+
 
     );
     register_post_type('work', $args);
@@ -101,7 +105,7 @@ if(! function_exists('work_taxonomy')):
             'show_ui'               => true,
             'show_admin_column'     => true,
             'show_in_quick_edit'    => false,
-
+            'show_in_nav_menus'     =>false,
             'update_count_callback' => '_update_post_term_count',
             'query_var'             => true,
             'rewrite'               => array( 'slug' => $slug ),
@@ -111,3 +115,6 @@ if(! function_exists('work_taxonomy')):
 endif;
 
 add_action('init','work_taxonomy');
+
+add_action('init','types_of_post_work_taxonomy');
+
