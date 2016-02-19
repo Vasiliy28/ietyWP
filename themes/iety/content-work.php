@@ -51,18 +51,21 @@ $query_work_type = new WP_Query(array(
             <?php wp_reset_query(); ?>
             <nav class="workMenu">
                 <ul>
-                    <li class="filter" data-filter="all">all <span></span></li>
                     <?php
                     $categories=  get_categories(array(
-                        'taxonomy' =>'type_of_work',
-                        'hide_empty' =>false
+                        'taxonomy' =>'type_of_work'
                     ));
-                    foreach ($categories as $category) {
-                        $option = '<li class="filter" data-filter=".'.$category->slug.'">';
-                        $option .= $category->cat_name;
-                        $option .= '<span></span></li>';
-                        echo $option;
-                    }
+                    if(!empty($categories)):?>
+                        <li class="filter" data-filter="all">all <span></span></li>
+                        <?php
+                        foreach ($categories as $category) {
+                            $option = '<li class="filter" data-filter=".'.$category->slug.'">';
+                            $option .= $category->cat_name;
+                            $option .= '<span></span></li>';
+                            echo $option;
+                        }
+                    endif;
+
                     ?>
                 </ul>
             </nav>

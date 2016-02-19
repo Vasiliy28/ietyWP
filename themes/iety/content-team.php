@@ -7,37 +7,33 @@
  */
 
 
-$query_header = new WP_Query(array(
+$query_team = new WP_Query(array(
     'post_type' => 'team',
     'orderby' => array(
         'menu_order' => 'ASC',
     ),
-    'posts_per_page' =>  1,
-    'post_name' => 'header'
+
 ));
-$query_worker = new WP_Query(array(
-    'post_type' => 'team',
-    'orderby' => array(
-        'menu_order' => 'ASC',
-    ),
-    'category_team' =>'worker')
-);
+
 ?>
 
-<?php if ($query_header->have_posts()): ?>
-<?php while ($query_header->have_posts()):$query_header->the_post() ?>
+<?php if ($query_team->have_posts()): ?>
+<?php while ($query_team->have_posts()):$query_team->the_post() ?>
+<?php if(has_term('header','category')):?>
 <section id="<?php echo the_ID(); ?>" class="wrapperOurTeam  <?php echo(the_field('background_post')); ?> ">
     <div class="container">
         <div class="ourTeam">
             <header class="headerSectionLight">
                 <h1><?php the_field('name_section') ?></h1>
             </header>
+            <?php endif; ?>
             <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_query(); ?>
             <article class="ourTeamContent ">
-                <?php if ($query_worker->have_posts()): ?>
-                <?php while ($query_worker->have_posts()):$query_worker->the_post() ?>
+                <?php if ($query_team->have_posts()): ?>
+                <?php while ($query_team->have_posts()):$query_team->the_post() ?>
+                        <?php if(!(has_term('header','category'))):?>
                         <div class="col-md-6">
                             <figure>
                                 <a href="#for_popup_<?php echo the_ID(); ?>" class="popup_team" ><img src="<?php the_field('image') ?>" alt="" class="clearfix"></a>
@@ -59,6 +55,7 @@ $query_worker = new WP_Query(array(
                             </div>
 
                         </div>
+                        <?php endif; ?>
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>

@@ -6,35 +6,31 @@
  * Time: 11:14
  */
 
-$query_header = new WP_Query(array(
+$query_price = new WP_Query(array(
     'post_type' => 'price',
     'orderby' => array(
         'menu_order' => 'ASC',
     ),
-    'type_price' => 'header',
-    'posts_per_page' => 1,
+
 ));
 
-$query_price = new WP_Query(array(
-    'post_type' => 'price',
-    'orderby' => array(
-        'menu_order' => 'DASC',
-    ),
-    'posts_per_page' => 4,
-));
+
 ?>
-<?php if ($query_header->have_posts()): ?>
-<?php while ($query_header->have_posts()):$query_header->the_post() ?>
+<?php if ($query_price->have_posts()): ?>
+<?php while ($query_price->have_posts()):$query_price->the_post() ?>
+<?php if(has_term('header','category')):?>
 <section id="<?php echo the_ID(); ?>" class="wrapperPrice <?php echo(the_field('background_post')); ?>">
     <span></span><span></span>
     <div class="container">
         <div class="row">
             <section class="prices clearfix">
+                <?php endif; ?>
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
                 <?php if ($query_price->have_posts()): ?>
                     <?php while ($query_price->have_posts()):$query_price->the_post() ?>
+                        <?php if(!(has_term('header','category'))):?>
                         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
                             <article class="priceing">
                                 <header>
@@ -47,6 +43,7 @@ $query_price = new WP_Query(array(
                                 <a href="#">Order</a>
                             </article>
                         </div>
+                        <?php endif; ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_query(); ?>
