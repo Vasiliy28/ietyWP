@@ -54,6 +54,13 @@
 		width: 33.3333%;
 		float: left;
 	}
+	.itemPage li.active a,
+	.itemPage li.click a,
+	.itemPage li.active,
+	.itemPage li.click{
+		cursor: pointer;
+		pointer-events: auto;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -238,17 +245,28 @@
 	header.headerHidden.active {
 		opacity: 1;
 	}
+
 	header.headerHidden.active .navPage{
 		pointer-events: auto;
 		opacity: 1;
 	}
-	.itemPage li.active a,
-	.itemPage li.click a,
-	.itemPage li.active,
-	.itemPage li.click{
+
+	header.headerHidden .itemPage li.active a,
+	header.headerHidden .itemPage li.click a,
+	header.headerHidden .itemPage li.active,
+	header.headerHidden .itemPage li.click{
+		cursor: pointer;
+		pointer-events: none;
+	}
+	header.headerHidden.active .itemPage li.active a,
+	header.headerHidden.active .itemPage li.click a,
+	header.headerHidden.active .itemPage li.active,
+	header.headerHidden.active .itemPage li.click{
 		cursor: pointer;
 		pointer-events: auto;
 	}
+
+
 
 	/*↑↑↑↑↑↑↑header↑↑↑↑↑↑*/
 	.mainLink::before,
@@ -283,6 +301,10 @@
 	.ourHistoryContent i{
 		margin: 0;
 	}
+	nav.workMenu ul li{
+		font-size: 18px;
+		margin: 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -294,28 +316,22 @@
 	.mainLink{
 		font-size: 3em;
 	}
-	.adout_worker{
-		display: none;
-	}
-	.popup_team img{
+
+	.worker img{
 		float: none!important;
 		margin: 0 auto!important;
 	}
-	.for_popup{
-		border: 1px solid white;
-		padding: 15px;
-		margin-top: 20%;
+	.worker figcaption{
+		text-align: center!important;
 	}
-	.for_popup img{
-		display: block;
-		margin: 0 auto;
+
+	.workMenu li{
+		max-width: 150px;
+		display: block!important;
+		margin: 10px auto!important;
 	}
-	.for_popup figcaption{
-		text-align: center;
-		color: white;
-	}
-	.for_popup .mfp-close{
-		color: #CCFF33;
+	.mainLink{
+		font-size: 2.5em;
 	}
 }
 

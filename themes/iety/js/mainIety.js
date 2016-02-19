@@ -7,62 +7,37 @@
         $spinner.fadeOut();
         $preloader.delay(350).fadeOut('slow');
     });
+
+
     $(window).ready(function () {
         'use strict'
-        console.log($(window).height());
-        $('.popup').magnificPopup({
-            type: 'image'
-        });
-        $('.popup_team').magnificPopup({
-            type:'inline',
-            midClick: true,
-        });
 
-
-        $(window).scroll(function () {
-            var st = $(this).scrollTop();
-
-            $('#back').css({
-                "transform": "translate(0% , " + st / 15 + "%"
+        var popup_work = function () {
+            $('.popup').magnificPopup({
+                type: 'image'
             });
+        };
+        var poaralax_for_main_picture = function () {
+            $(window).scroll(function () {
+                var st = $(this).scrollTop();
+                $('#back').css({
+                    "transform": "translate(0% , " + st / 15 + "%"
+                });
 
-        })
-        $(window).scroll(function () {
-            var st = $(this).scrollTop();
-
-            $('.wrapperContactUs .back').css({
-                "transform": "translate(0% , " + st / 50 + "%"
+            })
+        };
+        var toggleClass_button_menu = function (){
+            $("#togNav").click(function () {
+                $("#header").toggleClass('active')
             });
-
-        })
-        $("#togNav").click(function () {
-            $("#header").toggleClass('active')
-        })
-        $(window).ready(function () {
-            centre();
-        })
-
-        animateCss();
-        $('#allWorks').mixItUp({
-            callbacks: {
-                onMixEnd: function () {
-                    console.log("mix")
-                    animateCss()
-
-                }
-            }
-        });
-        $(window).resize(function () {
-            centre()
-        })
-        function centre() {
+        };
+        var centre_main_button = function(){
             var b = $("#mainLinkWrap");
             var w = b.width();
             console.log(w / 2)
             b.css("margin-left", -(w / 2))
-        }
-
-        function animateCss() {
+        };
+        var animateCss = function () {
             $("header.headerSection h1").animated("slideInRight", "slideOutRight", 50, 0)
             $("header.headerSection h3").animated("slideInRight", "slideOutRight", 50, 0)
             $("header.headerSection div").animated("slideInRight", "slideOutRight", 50, 30)
@@ -86,14 +61,42 @@
             $('.priceing').animated("zoomIn", "zoomOut", -100, -120)
             $('.welcomeContentLeft').animated("zoomInLeft", "zoomOutLeft", 20, -50)
             $('.welcomeContentRight').animated("zoomInRight", "zoomOutRight", -20, -50)
+        };
+
+
+        popup_work();
+        poaralax_for_main_picture();
+        toggleClass_button_menu();
+        centre_main_button();
+
+if(typeof mixItUp === "function"){
+    console.log('OK');
+}
+
+        animateCss();
+        $('#allWorks').mixItUp({
+            callbacks: {
+                onMixEnd: function () {
+                    console.log("mix")
+                    animateCss()
+                }
+            }
+        });
+        $(window).resize(function () {
+            centre_main_button()
+        })
+        function centre() {
+            var b = $("#mainLinkWrap");
+            var w = b.width();
+            console.log(w / 2)
+            b.css("margin-left", -(w / 2))
         }
 
 
+
+
         $(".inputField").each(function () {
-
-
             if ($(this).val() !== '' || $(this).val().match(/\S/g) !== null) {
-
                 var par = $(this).parent();
                 par.addClass('inputFilled')
             }
@@ -223,7 +226,7 @@
                 var th = $(this);
                 $.ajax({
                     type: "POST",
-                    url: "/wp-contentd/themes/iety/mail.php", //Change
+                    url: "/wp-content/themes/iety/mail.php", //Change
                     data: th.serialize()
                 }).done(function() {
                     alert("Thank you!");

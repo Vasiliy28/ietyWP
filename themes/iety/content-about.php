@@ -34,14 +34,14 @@ $query = new WP_Query($arg);
                     while ( have_rows('content') ) : the_row();
                     ?>
                         <article class="clearfix aboutUsContent">
-                            <div class="col-md-4 aboutUsContentLeft">
+                            <div class="col-sm-6 col-md-4 aboutUsContentLeft">
                                 <h3><?php the_field('header_content') ?></h3>
                                 <?php the_sub_field('left_colum') ?>
                             </div>
-                            <div class="col-md-4 aboutUsContentCenter">
+                            <div class="col-sm-6 col-md-4 aboutUsContentCenter">
                                 <?php the_sub_field('center_colum') ?>
                             </div>
-                            <div class="col-md-4 aboutUsContentRight">
+                            <div class="col-sm-6 col-md-4 aboutUsContentRight">
                                 <?php the_sub_field('right_colum') ?>
                                 <?php if( have_rows('icons') ) :?>
                                     <ul class="iconGroup">

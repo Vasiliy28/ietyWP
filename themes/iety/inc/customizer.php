@@ -43,62 +43,7 @@ function iety_customize_register( $wp_customize ) {
     }
 
 
-    //___General___//
-    $wp_customize->add_section(
-        'sydney_general',
-        array(
-            'title'         => __('General', 'sydney'),
-            'priority'      => 8,
-        )
-    );
-    //Top padding
-    $wp_customize->add_setting(
-        'wrapper_top_padding',
-        array(
-            'default' => __('83','sydney'),
-            'sanitize_callback' => 'absint',
-        )
-    );
-    $wp_customize->add_control(
-        'wrapper_top_padding',
-        array(
-            'label'         => __( 'Page wrapper - top padding', 'sydney' ),
-            'section'       => 'sydney_general',
-            'type'          => 'number',
-            'description'   => __('Top padding for the page wrapper (the space between the header and the page title)', 'sydney'),
-            'priority'      => 10,
-            'input_attrs' => array(
-                'min'   => 0,
-                'max'   => 160,
-                'step'  => 1,
-                'style' => 'margin-bottom: 15px; padding: 15px;',
-            ),
-        )
-    );
-    //Bottom padding
-    $wp_customize->add_setting(
-        'wrapper_bottom_padding',
-        array(
-            'default' => __('100','sydney'),
-            'sanitize_callback' => 'absint',
-        )
-    );
-    $wp_customize->add_control(
-        'wrapper_bottom_padding',
-        array(
-            'label'         => __( 'Page wrapper - top padding', 'sydney' ),
-            'section'       => 'sydney_general',
-            'type'          => 'number',
-            'description'   => __('Bottom padding for the page wrapper (the space between the page content and the footer)', 'sydney'),
-            'priority'      => 10,
-            'input_attrs' => array(
-                'min'   => 0,
-                'max'   => 160,
-                'step'  => 1,
-                'style' => 'margin-bottom: 15px; padding: 15px;',
-            ),
-        )
-    );
+
     //___Header area___//
     $wp_customize->add_panel( 'iety_header_panel', array(
         'priority'       => 10,

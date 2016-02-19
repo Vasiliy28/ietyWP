@@ -35,24 +35,15 @@ $query_team = new WP_Query(array(
                 <?php while ($query_team->have_posts()):$query_team->the_post() ?>
                         <?php if(!(has_term('header','category'))):?>
                         <div class="col-md-6">
-                            <figure>
-                                <a href="#for_popup_<?php echo the_ID(); ?>" class="popup_team" ><img src="<?php the_field('image') ?>" alt="" class="clearfix"></a>
-                                <figcaption class="clearfix adout_worker">
+                            <figure class="worker">
+                                <a  ><img src="<?php the_field('image') ?>" alt="" class="clearfix"></a>
+                                <figcaption class="clearfix">
                                     <h1> <?php the_field('name') ?></h1>
                                     <h4><?php the_field('profession') ?></h4>
                                     <p><?php the_field('info') ?></p>
                                 </figcaption>
                             </figure>
-                            <div class="hidden">
-                                <figure id="for_popup_<?php echo the_ID(); ?>" class="for_popup">
-                                    <img src="<?php the_field('image') ?>" alt="" class="clearfix">
-                                    <figcaption class="clearfix">
-                                        <h1> <?php the_field('name') ?></h1>
-                                        <h4><?php the_field('profession') ?></h4>
-                                        <p><?php the_field('info') ?></p>
-                                    </figcaption>
-                                </figure>
-                            </div>
+
 
                         </div>
                         <?php endif; ?>

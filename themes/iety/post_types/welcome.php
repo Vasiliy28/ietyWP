@@ -72,6 +72,17 @@ endif;
 add_action('init', 'welcome_post_type');
 
 
+    add_action('admin_menu', 'register_my_custom_submenu_page');
+
+function register_my_custom_submenu_page() {
+    add_submenu_page( 'edit.php?post_type=welcome', 'Дополнительная страница инструментов', 'Название инструмента', 'edit_theme_options', 'my-custom-submenu-page', 'my_custom_submenu_page_callback' );
+}
+
+function my_custom_submenu_page_callback() {
+
+}
+
+
 
 
 

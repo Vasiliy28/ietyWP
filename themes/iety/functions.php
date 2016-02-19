@@ -102,8 +102,6 @@ if ( ! function_exists( 'iety_setup' ) ) :
 endif; // sydney_setup
 add_action( 'after_setup_theme', 'iety_setup',20 );
 
-
-
 /**
  * Enqueue scripts and styles.
  */
@@ -118,7 +116,6 @@ function iety_scripts() {
     wp_dequeue_script('sydney-masonry-init');
 
     wp_dequeue_script('sydney-main');
-
 
     /**
      *to plug stily and script for Iety theme
@@ -242,6 +239,7 @@ require get_stylesheet_directory()  . '/post_types/team.php';
 require get_stylesheet_directory()  . '/post_types/price.php';
 require get_stylesheet_directory()  . '/post_types/contact.php';
 require get_stylesheet_directory()  . '/inc/theme-options.php';
+
 
 
 

@@ -17,7 +17,6 @@ $query_welcome = new WP_Query(array(
 ?>
 
 <?php if ($query_welcome->have_posts()) : ?>
-
 <?php while ($query_welcome->have_posts()) :$query_welcome->the_post(); ?>
 <?php if (has_term('header','category' )): ?>
 <section id="<?php echo the_ID(); ?>" class="wrapperWelcome <?php echo(the_field('background_post')); ?>">

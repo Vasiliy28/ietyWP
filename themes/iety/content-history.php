@@ -16,18 +16,19 @@ $query_history = new WP_Query(array(
 
 ?>
 
-<?php if ($query_history->have_posts()): ?>
-<?php while ($query_history->have_posts()):$query_history->the_post() ?>
-<?php if (has_term('header', 'category')): ?>
+
 <section id="<?php echo the_ID(); ?>" class="wrapperOurHistory <?php echo(the_field('background_post')); ?>">
     <div class="container ">
         <div class="ourHistory ">
             <span></span>
-            <header class="headerSectionLight">
-                <h1><?php the_field('name_section') ?></h1>
-            </header>
-            <?php endif; ?>
-            <?php endwhile; ?>
+            <?php if ($query_history->have_posts()): ?>
+                <?php while ($query_history->have_posts()):$query_history->the_post() ?>
+                    <?php if (has_term('header', 'category')): ?>
+                        <header class="headerSectionLight">
+                            <h1><?php the_field('name_section') ?></h1>
+                        </header>
+                    <?php endif; ?>
+                <?php endwhile; ?>
             <?php endif; ?>
             <article class="ourHistoryContent clearfix ">
                 <div class="col-xs-12 col-sm-6 leftContentHistory">
