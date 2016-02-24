@@ -2,7 +2,7 @@
 
 class Sydney_Latest_News extends WP_Widget {
 
-    function sydney_latest_news() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_latest_news_widget', 'description' => __( 'Show the latest news from your blog.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Latest News', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_latest_news_widget';

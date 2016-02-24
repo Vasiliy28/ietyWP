@@ -2,7 +2,7 @@
 
 class Sydney_Testimonials extends WP_Widget {
 
-    function sydney_testimonials() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_testimonials_widget', 'description' => __( 'Display your testimonials in a slider.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Testimonials', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_testimonials_widget';

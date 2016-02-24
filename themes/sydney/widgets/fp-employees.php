@@ -2,7 +2,7 @@
 
 class Sydney_Employees extends WP_Widget {
 
-    function sydney_employees() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_employees_widget', 'description' => __( 'Display your team members in a stylish way.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Employees', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_employees_widget';

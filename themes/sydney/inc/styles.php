@@ -177,6 +177,6 @@ function sydney_custom_styles($custom) {
 	$custom .= ".page-wrap { padding-bottom:" . intval($pw_bottom_padding) . "px;}"."\n";	
 
 	//Output all the styles
-	wp_add_inline_style( 'sydney-style', $custom );
+	wp_add_inline_style( 'sydney-style', $custom );	
 }
 add_action( 'wp_enqueue_scripts', 'sydney_custom_styles' );

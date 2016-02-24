@@ -2,7 +2,7 @@
 
 class Sydney_Action extends WP_Widget {
 
-    function sydney_action() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_action_widget', 'description' => __( 'Display a call to action block.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Call to action', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_action_widget';

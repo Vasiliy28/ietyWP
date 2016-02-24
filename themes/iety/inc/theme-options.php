@@ -14,7 +14,7 @@ function theme_options_init(){
  * Load up the menu page
  */
 function theme_options_add_page() {
-	add_theme_page( __( 'Info', 'sampletheme' ), __( 'Info', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
+	add_submenu_page('edit.php?post_type=contact', __( 'Info', 'sampletheme' ), __( 'Info', 'sampletheme' ), 'edit_theme_options', 'theme_options', 'theme_options_do_page' );
 }
 
 /**

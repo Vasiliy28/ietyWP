@@ -2,7 +2,7 @@
 
 class Sydney_Contact_Info extends WP_Widget {
 
-    function sydney_contact_info() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_contact_info_widget', 'description' => __( 'Display your contact info', 'sydney') );
         parent::__construct(false, $name = __('Sydney: Contact info', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_contact_info';	

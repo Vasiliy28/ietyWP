@@ -2,7 +2,7 @@
 
 class Sydney_Skills extends WP_Widget {
 
-    function sydney_skills() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_skills_widget', 'description' => __( 'Show your visitors some of your skills.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Skills', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_skills_widget';

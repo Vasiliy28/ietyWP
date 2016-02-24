@@ -7,7 +7,7 @@
 
 class Sydney_Services_Type_B extends WP_Widget {
 
-    function sydney_services_type_b() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_services_b_widget', 'description' => __( 'Show what services you are able to provide.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Services type B', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_services_b_widget';		

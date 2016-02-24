@@ -2,7 +2,7 @@
 
 class Sydney_Clients extends WP_Widget {
 
-    function sydney_clients() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_clients_widget', 'description' => __( 'Display your clients list.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Clients', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_clients_widget';

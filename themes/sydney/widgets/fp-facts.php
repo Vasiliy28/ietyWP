@@ -3,7 +3,7 @@
 class Sydney_Facts extends WP_Widget {
 
 // constructor
-    function sydney_facts() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_facts_widget', 'description' => __( 'Show your visitors some facts about your company.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Facts', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_facts_widget';

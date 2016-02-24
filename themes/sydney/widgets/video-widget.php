@@ -2,7 +2,7 @@
 
 class Sydney_Video_Widget extends WP_Widget {
 
-    function sydney_video_widget() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_video_widget_widget', 'description' => __( 'Display a video from Youtube, Vimeo etc.', 'sydney') );
         parent::__construct(false, $name = __('Sydney: Video', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_video_widget';
